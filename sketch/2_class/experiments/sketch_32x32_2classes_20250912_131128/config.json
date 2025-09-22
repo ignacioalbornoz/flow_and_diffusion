@@ -1,0 +1,23 @@
+{
+  "experiment_name": "sketch_32x32_2classes",
+  "experiment_id": "sketch_32x32_2classes_20250912_131128",
+  "created_at": "2025-09-12T13:11:28.749179",
+  "base_dir": ".",
+  "description": "32x32 resolution, 2 classes, research-grade model",
+  "image_size": 32,
+  "model_channels": [
+    64,
+    128,
+    256,
+    512
+  ],
+  "num_residual_layers": 4,
+  "learning_rate": 0.0001,
+  "guidance_scale": 1.5,
+  "eta": 0.1,
+  "weight_multiplier": 1.0,
+  "batch_size": 32,
+  "num_epochs": 10000,
+  "checkpoint_interval": 50,
+  "sample_interval": 50
+}

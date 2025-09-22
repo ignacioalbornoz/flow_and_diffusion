@@ -1,0 +1,1462 @@
+2025-09-12 13:16:44,797 - INFO - Starting experiment: sketch_32x32_2classes
+2025-09-12 13:16:44,797 - INFO - Config: {'description': '32x32 resolution, 2 classes, research-grade model', 'image_size': 32, 'model_channels': [64, 128, 256, 512], 'num_residual_layers': 4, 'learning_rate': 0.0001, 'guidance_scale': 1.5, 'eta': 0.1, 'weight_multiplier': 1.0, 'batch_size': 32, 'num_epochs': 10000, 'checkpoint_interval': 50, 'sample_interval': 50}
+2025-09-12 13:16:44,797 - INFO - Using device: cuda:1
+2025-09-12 13:16:44,828 - INFO - GPU Memory: 25.2GB
+2025-09-12 13:16:44,828 - INFO - Free Memory: 0.0GB
+2025-09-12 13:16:44,828 - INFO - Initializing probability path...
+2025-09-12 13:16:45,417 - INFO - Probability path initialized successfully
+2025-09-12 13:16:45,418 - INFO - Initializing SketchUNet model...
+2025-09-12 13:16:45,734 - INFO - Model initialized successfully
+2025-09-12 13:16:45,736 - INFO - Total parameters: 34,947,534
+2025-09-12 13:16:45,737 - INFO - Trainable parameters: 34,947,534
+2025-09-12 13:16:45,737 - INFO - Initializing CFG trainer...
+2025-09-12 13:16:45,737 - INFO - Trainer initialized successfully
+2025-09-12 13:16:45,737 - INFO - Starting training:
+2025-09-12 13:16:45,737 - INFO -   - Total epochs: 10000
+2025-09-12 13:16:45,737 - INFO -   - Learning rate: 0.0001
+2025-09-12 13:16:45,737 - INFO -   - Batch size: 32
+2025-09-12 13:16:45,737 - INFO -   - Image size: 32x32
+2025-09-12 13:16:45,737 - INFO -   - Model channels: [64, 128, 256, 512]
+2025-09-12 13:16:45,737 - INFO -   - Eta (null class probability): 0.1
+2025-09-12 13:16:45,737 - INFO -   - Loss: Standard MSE (no weighting)
+2025-09-12 13:16:45,737 - INFO -   - Checkpoint interval: 50
+2025-09-12 13:16:45,737 - INFO -   - Sample interval: 50
+2025-09-12 13:16:45,737 - INFO - Starting training...
+2025-09-12 13:16:46,298 - INFO - Epoch    0, Loss: 2733.011719
+2025-09-12 13:16:46,840 - INFO - New best model saved (loss: 2733.011719)
+2025-09-12 13:16:50,894 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_0000_classes_0-1.png
+2025-09-12 13:16:54,473 - INFO - New best model saved (loss: 1831.853760)
+2025-09-12 13:16:57,566 - INFO - New best model saved (loss: 1581.791382)
+2025-09-12 13:17:00,664 - INFO - New best model saved (loss: 1491.914062)
+2025-09-12 13:17:03,966 - INFO - New best model saved (loss: 1362.582275)
+2025-09-12 13:17:07,065 - INFO - New best model saved (loss: 1345.415283)
+2025-09-12 13:17:10,212 - INFO - New best model saved (loss: 1195.032959)
+2025-09-12 13:17:10,637 - INFO - Epoch   10, Loss: 1195.353882
+2025-09-12 13:17:14,416 - INFO - New best model saved (loss: 1161.935059)
+2025-09-12 13:17:17,620 - INFO - New best model saved (loss: 1081.190918)
+2025-09-12 13:17:20,989 - INFO - New best model saved (loss: 1058.209229)
+2025-09-12 13:17:21,233 - INFO - Epoch   20, Loss: 1237.798096
+2025-09-12 13:17:24,527 - INFO - New best model saved (loss: 1006.971558)
+2025-09-12 13:17:28,462 - INFO - New best model saved (loss: 1006.133179)
+2025-09-12 13:17:31,612 - INFO - New best model saved (loss: 990.919312)
+2025-09-12 13:17:32,027 - INFO - Epoch   30, Loss: 1011.755066
+2025-09-12 13:17:35,298 - INFO - New best model saved (loss: 928.324158)
+2025-09-12 13:17:39,891 - INFO - New best model saved (loss: 923.862427)
+2025-09-12 13:17:40,119 - INFO - Epoch   40, Loss: 947.892273
+2025-09-12 13:17:41,699 - INFO - Epoch   50, Loss: 1079.562866
+2025-09-12 13:17:42,256 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_0050.pth
+2025-09-12 13:17:45,843 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_0050_classes_0-1.png
+2025-09-12 13:17:49,008 - INFO - New best model saved (loss: 906.459106)
+2025-09-12 13:17:52,978 - INFO - New best model saved (loss: 860.484497)
+2025-09-12 13:17:53,212 - INFO - Epoch   60, Loss: 925.727539
+2025-09-12 13:17:54,701 - INFO - Epoch   70, Loss: 901.532349
+2025-09-12 13:17:58,335 - INFO - New best model saved (loss: 825.371582)
+2025-09-12 13:17:59,523 - INFO - Epoch   80, Loss: 839.852966
+2025-09-12 13:18:03,661 - INFO - New best model saved (loss: 825.222778)
+2025-09-12 13:18:04,165 - INFO - Epoch   90, Loss: 850.789551
+2025-09-12 13:18:07,319 - INFO - New best model saved (loss: 774.724487)
+2025-09-12 13:18:08,561 - INFO - Epoch  100, Loss: 824.755127
+2025-09-12 13:18:09,121 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_0100.pth
+2025-09-12 13:18:12,705 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_0100_classes_0-1.png
+2025-09-12 13:18:18,809 - INFO - New best model saved (loss: 763.566284)
+2025-09-12 13:18:19,401 - INFO - Epoch  110, Loss: 808.205078
+2025-09-12 13:18:22,698 - INFO - New best model saved (loss: 737.088745)
+2025-09-12 13:18:26,485 - INFO - New best model saved (loss: 732.539429)
+2025-09-12 13:18:26,845 - INFO - Epoch  120, Loss: 763.098572
+2025-09-12 13:18:30,118 - INFO - New best model saved (loss: 730.161011)
+2025-09-12 13:18:33,752 - INFO - New best model saved (loss: 727.921021)
+2025-09-12 13:18:37,074 - INFO - New best model saved (loss: 718.608643)
+2025-09-12 13:18:37,549 - INFO - Epoch  130, Loss: 701.708801
+2025-09-12 13:18:41,903 - INFO - New best model saved (loss: 701.708801)
+2025-09-12 13:18:43,515 - INFO - Epoch  140, Loss: 727.659058
+2025-09-12 13:18:46,849 - INFO - New best model saved (loss: 686.809631)
+2025-09-12 13:18:50,621 - INFO - New best model saved (loss: 667.874878)
+2025-09-12 13:18:53,857 - INFO - New best model saved (loss: 654.073242)
+2025-09-12 13:18:54,341 - INFO - Epoch  150, Loss: 751.880005
+2025-09-12 13:18:54,888 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_0150.pth
+2025-09-12 13:18:58,508 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_0150_classes_0-1.png
+2025-09-12 13:18:59,869 - INFO - Epoch  160, Loss: 659.619995
+2025-09-12 13:19:02,877 - INFO - New best model saved (loss: 620.186951)
+2025-09-12 13:19:07,139 - INFO - New best model saved (loss: 588.425354)
+2025-09-12 13:19:07,496 - INFO - Epoch  170, Loss: 677.669861
+2025-09-12 13:19:11,291 - INFO - New best model saved (loss: 585.576782)
+2025-09-12 13:19:12,049 - INFO - Epoch  180, Loss: 587.003418
+2025-09-12 13:19:13,335 - INFO - Epoch  190, Loss: 586.421875
+2025-09-12 13:19:17,397 - INFO - New best model saved (loss: 568.900391)
+2025-09-12 13:19:20,963 - INFO - New best model saved (loss: 559.767639)
+2025-09-12 13:19:21,204 - INFO - Epoch  200, Loss: 577.601196
+2025-09-12 13:19:21,918 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_0200.pth
+2025-09-12 13:19:25,508 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_0200_classes_0-1.png
+2025-09-12 13:19:30,433 - INFO - New best model saved (loss: 537.650757)
+2025-09-12 13:19:30,633 - INFO - Epoch  210, Loss: 549.318298
+2025-09-12 13:19:35,200 - INFO - New best model saved (loss: 513.739685)
+2025-09-12 13:19:39,688 - INFO - New best model saved (loss: 503.348969)
+2025-09-12 13:19:39,897 - INFO - Epoch  220, Loss: 519.674438
+2025-09-12 13:19:43,289 - INFO - New best model saved (loss: 497.364105)
+2025-09-12 13:19:44,417 - INFO - Epoch  230, Loss: 523.305908
+2025-09-12 13:19:48,363 - INFO - New best model saved (loss: 484.163666)
+2025-09-12 13:19:49,067 - INFO - Epoch  240, Loss: 530.905273
+2025-09-12 13:19:52,543 - INFO - New best model saved (loss: 477.511444)
+2025-09-12 13:19:55,843 - INFO - New best model saved (loss: 467.847290)
+2025-09-12 13:20:00,069 - INFO - New best model saved (loss: 453.765594)
+2025-09-12 13:20:00,749 - INFO - Epoch  250, Loss: 527.877319
+2025-09-12 13:20:01,285 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_0250.pth
+2025-09-12 13:20:04,893 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_0250_classes_0-1.png
+2025-09-12 13:20:08,754 - INFO - New best model saved (loss: 443.522797)
+2025-09-12 13:20:09,689 - INFO - Epoch  260, Loss: 447.332764
+2025-09-12 13:20:13,209 - INFO - New best model saved (loss: 418.860352)
+2025-09-12 13:20:14,382 - INFO - Epoch  270, Loss: 433.507324
+2025-09-12 13:20:17,859 - INFO - New best model saved (loss: 410.124878)
+2025-09-12 13:20:21,659 - INFO - New best model saved (loss: 402.716492)
+2025-09-12 13:20:22,048 - INFO - Epoch  280, Loss: 425.598938
+2025-09-12 13:20:23,557 - INFO - Epoch  290, Loss: 416.042145
+2025-09-12 13:20:27,127 - INFO - New best model saved (loss: 389.220062)
+2025-09-12 13:20:28,195 - INFO - Epoch  300, Loss: 394.101624
+2025-09-12 13:20:28,741 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_0300.pth
+2025-09-12 13:20:32,326 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_0300_classes_0-1.png
+2025-09-12 13:20:36,155 - INFO - New best model saved (loss: 378.389099)
+2025-09-12 13:20:37,264 - INFO - Epoch  310, Loss: 436.772369
+2025-09-12 13:20:40,703 - INFO - New best model saved (loss: 369.976318)
+2025-09-12 13:20:41,677 - INFO - Epoch  320, Loss: 389.408966
+2025-09-12 13:20:45,850 - INFO - New best model saved (loss: 364.038727)
+2025-09-12 13:20:46,150 - INFO - Epoch  330, Loss: 386.114075
+2025-09-12 13:20:50,099 - INFO - New best model saved (loss: 357.793457)
+2025-09-12 13:20:50,648 - INFO - Epoch  340, Loss: 355.335571
+2025-09-12 13:20:53,570 - INFO - New best model saved (loss: 355.335571)
+2025-09-12 13:20:54,970 - INFO - Epoch  350, Loss: 380.220886
+2025-09-12 13:20:55,671 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_0350.pth
+2025-09-12 13:20:59,265 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_0350_classes_0-1.png
+2025-09-12 13:21:02,541 - INFO - New best model saved (loss: 346.275665)
+2025-09-12 13:21:07,556 - INFO - New best model saved (loss: 335.710022)
+2025-09-12 13:21:08,757 - INFO - Epoch  360, Loss: 336.321899
+2025-09-12 13:21:12,571 - INFO - New best model saved (loss: 333.044403)
+2025-09-12 13:21:15,850 - INFO - New best model saved (loss: 315.693909)
+2025-09-12 13:21:16,292 - INFO - Epoch  370, Loss: 344.040955
+2025-09-12 13:21:17,655 - INFO - Epoch  380, Loss: 297.610352
+2025-09-12 13:21:20,755 - INFO - New best model saved (loss: 297.610352)
+2025-09-12 13:21:22,196 - INFO - Epoch  390, Loss: 350.329468
+2025-09-12 13:21:26,146 - INFO - New best model saved (loss: 290.656067)
+2025-09-12 13:21:26,920 - INFO - Epoch  400, Loss: 359.250244
+2025-09-12 13:21:27,472 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_0400.pth
+2025-09-12 13:21:31,051 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_0400_classes_0-1.png
+2025-09-12 13:21:32,643 - INFO - Epoch  410, Loss: 347.520569
+2025-09-12 13:21:35,865 - INFO - New best model saved (loss: 284.270142)
+2025-09-12 13:21:37,106 - INFO - Epoch  420, Loss: 343.731262
+2025-09-12 13:21:40,264 - INFO - New best model saved (loss: 271.905548)
+2025-09-12 13:21:43,408 - INFO - New best model saved (loss: 267.769165)
+2025-09-12 13:21:47,354 - INFO - New best model saved (loss: 260.393433)
+2025-09-12 13:21:47,689 - INFO - Epoch  430, Loss: 305.683594
+2025-09-12 13:21:51,732 - INFO - New best model saved (loss: 252.653915)
+2025-09-12 13:21:52,167 - INFO - Epoch  440, Loss: 291.160583
+2025-09-12 13:21:55,293 - INFO - New best model saved (loss: 248.464844)
+2025-09-12 13:21:56,720 - INFO - Epoch  450, Loss: 243.237396
+2025-09-12 13:21:57,280 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_0450.pth
+2025-09-12 13:22:00,198 - INFO - New best model saved (loss: 243.237396)
+2025-09-12 13:22:03,873 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_0450_classes_0-1.png
+2025-09-12 13:22:05,544 - INFO - Epoch  460, Loss: 298.804626
+2025-09-12 13:22:06,858 - INFO - Epoch  470, Loss: 272.053772
+2025-09-12 13:22:08,130 - INFO - Epoch  480, Loss: 292.322144
+2025-09-12 13:22:11,535 - INFO - New best model saved (loss: 230.756775)
+2025-09-12 13:22:12,474 - INFO - Epoch  490, Loss: 345.984009
+2025-09-12 13:22:13,797 - INFO - Epoch  500, Loss: 253.630814
+2025-09-12 13:22:14,341 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_0500.pth
+2025-09-12 13:22:17,932 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_0500_classes_0-1.png
+2025-09-12 13:22:19,399 - INFO - Epoch  510, Loss: 317.160339
+2025-09-12 13:22:20,646 - INFO - Epoch  520, Loss: 260.340881
+2025-09-12 13:22:21,903 - INFO - Epoch  530, Loss: 241.426727
+2025-09-12 13:22:23,497 - INFO - Epoch  540, Loss: 240.779648
+2025-09-12 13:22:27,598 - INFO - New best model saved (loss: 201.396744)
+2025-09-12 13:22:27,955 - INFO - Epoch  550, Loss: 241.071320
+2025-09-12 13:22:28,502 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_0550.pth
+2025-09-12 13:22:32,269 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_0550_classes_0-1.png
+2025-09-12 13:22:33,926 - INFO - Epoch  560, Loss: 219.932648
+2025-09-12 13:22:35,635 - INFO - Epoch  570, Loss: 206.943085
+2025-09-12 13:22:37,225 - INFO - Epoch  580, Loss: 212.985016
+2025-09-12 13:22:38,496 - INFO - Epoch  590, Loss: 235.099243
+2025-09-12 13:22:41,831 - INFO - New best model saved (loss: 199.437195)
+2025-09-12 13:22:42,917 - INFO - Epoch  600, Loss: 216.141357
+2025-09-12 13:22:43,484 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_0600.pth
+2025-09-12 13:22:47,093 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_0600_classes_0-1.png
+2025-09-12 13:22:48,577 - INFO - Epoch  610, Loss: 225.009613
+2025-09-12 13:22:49,964 - INFO - Epoch  620, Loss: 258.492523
+2025-09-12 13:22:54,188 - INFO - New best model saved (loss: 189.732941)
+2025-09-12 13:22:54,425 - INFO - Epoch  630, Loss: 232.863647
+2025-09-12 13:22:58,644 - INFO - New best model saved (loss: 179.327362)
+2025-09-12 13:22:59,141 - INFO - Epoch  640, Loss: 226.908539
+2025-09-12 13:23:05,161 - INFO - New best model saved (loss: 178.068512)
+2025-09-12 13:23:05,574 - INFO - Epoch  650, Loss: 248.950317
+2025-09-12 13:23:06,120 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_0650.pth
+2025-09-12 13:23:09,733 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_0650_classes_0-1.png
+2025-09-12 13:23:11,203 - INFO - Epoch  660, Loss: 236.914520
+2025-09-12 13:23:12,578 - INFO - Epoch  670, Loss: 245.316711
+2025-09-12 13:23:14,142 - INFO - Epoch  680, Loss: 216.629364
+2025-09-12 13:23:15,613 - INFO - Epoch  690, Loss: 249.374878
+2025-09-12 13:23:17,265 - INFO - Epoch  700, Loss: 249.934204
+2025-09-12 13:23:17,821 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_0700.pth
+2025-09-12 13:23:21,421 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_0700_classes_0-1.png
+2025-09-12 13:23:22,935 - INFO - Epoch  710, Loss: 181.977051
+2025-09-12 13:23:24,415 - INFO - Epoch  720, Loss: 200.930664
+2025-09-12 13:23:25,796 - INFO - Epoch  730, Loss: 186.423462
+2025-09-12 13:23:27,388 - INFO - Epoch  740, Loss: 207.602722
+2025-09-12 13:23:30,932 - INFO - New best model saved (loss: 176.161346)
+2025-09-12 13:23:31,962 - INFO - Epoch  750, Loss: 247.914017
+2025-09-12 13:23:32,525 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_0750.pth
+2025-09-12 13:23:36,128 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_0750_classes_0-1.png
+2025-09-12 13:23:37,670 - INFO - Epoch  760, Loss: 177.609146
+2025-09-12 13:23:39,104 - INFO - Epoch  770, Loss: 194.247375
+2025-09-12 13:23:42,152 - INFO - New best model saved (loss: 169.652130)
+2025-09-12 13:23:45,460 - INFO - New best model saved (loss: 163.837814)
+2025-09-12 13:23:46,666 - INFO - Epoch  780, Loss: 223.593903
+2025-09-12 13:23:48,396 - INFO - Epoch  790, Loss: 178.875824
+2025-09-12 13:23:49,901 - INFO - Epoch  800, Loss: 204.379837
+2025-09-12 13:23:50,459 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_0800.pth
+2025-09-12 13:23:54,063 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_0800_classes_0-1.png
+2025-09-12 13:23:55,651 - INFO - Epoch  810, Loss: 191.174530
+2025-09-12 13:23:57,307 - INFO - Epoch  820, Loss: 211.692795
+2025-09-12 13:23:58,690 - INFO - Epoch  830, Loss: 195.651825
+2025-09-12 13:24:00,088 - INFO - Epoch  840, Loss: 212.966583
+2025-09-12 13:24:01,383 - INFO - Epoch  850, Loss: 163.381134
+2025-09-12 13:24:01,957 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_0850.pth
+2025-09-12 13:24:05,094 - INFO - New best model saved (loss: 163.381134)
+2025-09-12 13:24:08,767 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_0850_classes_0-1.png
+2025-09-12 13:24:10,468 - INFO - Epoch  860, Loss: 218.913162
+2025-09-12 13:24:12,097 - INFO - Epoch  870, Loss: 232.961731
+2025-09-12 13:24:13,547 - INFO - Epoch  880, Loss: 201.919373
+2025-09-12 13:24:14,982 - INFO - Epoch  890, Loss: 221.662628
+2025-09-12 13:24:16,390 - INFO - Epoch  900, Loss: 172.560272
+2025-09-12 13:24:16,964 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_0900.pth
+2025-09-12 13:24:20,562 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_0900_classes_0-1.png
+2025-09-12 13:24:22,167 - INFO - Epoch  910, Loss: 183.040344
+2025-09-12 13:24:26,865 - INFO - New best model saved (loss: 161.353790)
+2025-09-12 13:24:27,598 - INFO - Epoch  920, Loss: 202.777283
+2025-09-12 13:24:29,216 - INFO - Epoch  930, Loss: 185.629639
+2025-09-12 13:24:30,677 - INFO - Epoch  940, Loss: 212.483154
+2025-09-12 13:24:32,178 - INFO - Epoch  950, Loss: 186.676819
+2025-09-12 13:24:32,732 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_0950.pth
+2025-09-12 13:24:36,342 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_0950_classes_0-1.png
+2025-09-12 13:24:37,904 - INFO - Epoch  960, Loss: 143.340683
+2025-09-12 13:24:40,853 - INFO - New best model saved (loss: 143.340683)
+2025-09-12 13:24:42,472 - INFO - Epoch  970, Loss: 214.495529
+2025-09-12 13:24:43,740 - INFO - Epoch  980, Loss: 201.595078
+2025-09-12 13:24:45,154 - INFO - Epoch  990, Loss: 205.743591
+2025-09-12 13:24:46,401 - INFO - Epoch 1000, Loss: 163.558014
+2025-09-12 13:24:46,954 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_1000.pth
+2025-09-12 13:24:50,549 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_1000_classes_0-1.png
+2025-09-12 13:24:51,978 - INFO - Epoch 1010, Loss: 187.504578
+2025-09-12 13:24:53,241 - INFO - Epoch 1020, Loss: 212.306488
+2025-09-12 13:24:54,617 - INFO - Epoch 1030, Loss: 177.770447
+2025-09-12 13:24:56,300 - INFO - Epoch 1040, Loss: 179.506836
+2025-09-12 13:24:57,501 - INFO - Epoch 1050, Loss: 243.828217
+2025-09-12 13:24:58,056 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_1050.pth
+2025-09-12 13:25:01,792 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_1050_classes_0-1.png
+2025-09-12 13:25:03,162 - INFO - Epoch 1060, Loss: 185.917542
+2025-09-12 13:25:04,528 - INFO - Epoch 1070, Loss: 150.474548
+2025-09-12 13:25:06,089 - INFO - Epoch 1080, Loss: 176.595093
+2025-09-12 13:25:07,480 - INFO - Epoch 1090, Loss: 198.722137
+2025-09-12 13:25:08,870 - INFO - Epoch 1100, Loss: 183.749023
+2025-09-12 13:25:09,422 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_1100.pth
+2025-09-12 13:25:13,029 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_1100_classes_0-1.png
+2025-09-12 13:25:14,353 - INFO - Epoch 1110, Loss: 177.820587
+2025-09-12 13:25:15,771 - INFO - Epoch 1120, Loss: 189.863220
+2025-09-12 13:25:17,137 - INFO - Epoch 1130, Loss: 176.613281
+2025-09-12 13:25:18,574 - INFO - Epoch 1140, Loss: 182.069168
+2025-09-12 13:25:20,029 - INFO - Epoch 1150, Loss: 205.534073
+2025-09-12 13:25:20,583 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_1150.pth
+2025-09-12 13:25:24,169 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_1150_classes_0-1.png
+2025-09-12 13:25:25,650 - INFO - Epoch 1160, Loss: 155.190033
+2025-09-12 13:25:27,140 - INFO - Epoch 1170, Loss: 170.298706
+2025-09-12 13:25:28,475 - INFO - Epoch 1180, Loss: 157.106461
+2025-09-12 13:25:29,960 - INFO - Epoch 1190, Loss: 186.246704
+2025-09-12 13:25:31,308 - INFO - Epoch 1200, Loss: 185.674667
+2025-09-12 13:25:31,857 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_1200.pth
+2025-09-12 13:25:35,457 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_1200_classes_0-1.png
+2025-09-12 13:25:37,056 - INFO - Epoch 1210, Loss: 194.114746
+2025-09-12 13:25:38,428 - INFO - Epoch 1220, Loss: 194.088135
+2025-09-12 13:25:41,872 - INFO - New best model saved (loss: 140.254883)
+2025-09-12 13:25:43,186 - INFO - Epoch 1230, Loss: 175.765732
+2025-09-12 13:25:44,550 - INFO - Epoch 1240, Loss: 183.353500
+2025-09-12 13:25:45,982 - INFO - Epoch 1250, Loss: 189.341858
+2025-09-12 13:25:46,708 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_1250.pth
+2025-09-12 13:25:50,319 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_1250_classes_0-1.png
+2025-09-12 13:25:53,771 - INFO - New best model saved (loss: 136.921738)
+2025-09-12 13:25:54,913 - INFO - Epoch 1260, Loss: 163.337280
+2025-09-12 13:25:56,247 - INFO - Epoch 1270, Loss: 150.220093
+2025-09-12 13:25:59,848 - INFO - New best model saved (loss: 130.634933)
+2025-09-12 13:26:00,865 - INFO - Epoch 1280, Loss: 147.772812
+2025-09-12 13:26:02,260 - INFO - Epoch 1290, Loss: 142.841309
+2025-09-12 13:26:03,638 - INFO - Epoch 1300, Loss: 223.056763
+2025-09-12 13:26:04,208 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_1300.pth
+2025-09-12 13:26:07,905 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_1300_classes_0-1.png
+2025-09-12 13:26:09,358 - INFO - Epoch 1310, Loss: 158.661270
+2025-09-12 13:26:10,722 - INFO - Epoch 1320, Loss: 185.862854
+2025-09-12 13:26:12,206 - INFO - Epoch 1330, Loss: 158.649277
+2025-09-12 13:26:13,458 - INFO - Epoch 1340, Loss: 181.408752
+2025-09-12 13:26:14,856 - INFO - Epoch 1350, Loss: 171.419678
+2025-09-12 13:26:15,429 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_1350.pth
+2025-09-12 13:26:19,043 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_1350_classes_0-1.png
+2025-09-12 13:26:20,451 - INFO - Epoch 1360, Loss: 131.504303
+2025-09-12 13:26:21,941 - INFO - Epoch 1370, Loss: 177.233566
+2025-09-12 13:26:23,425 - INFO - Epoch 1380, Loss: 158.143494
+2025-09-12 13:26:24,878 - INFO - Epoch 1390, Loss: 146.178955
+2025-09-12 13:26:26,296 - INFO - Epoch 1400, Loss: 190.397308
+2025-09-12 13:26:27,008 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_1400.pth
+2025-09-12 13:26:30,630 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_1400_classes_0-1.png
+2025-09-12 13:26:31,941 - INFO - Epoch 1410, Loss: 153.635254
+2025-09-12 13:26:33,255 - INFO - Epoch 1420, Loss: 189.727386
+2025-09-12 13:26:34,490 - INFO - Epoch 1430, Loss: 154.398315
+2025-09-12 13:26:35,916 - INFO - Epoch 1440, Loss: 172.770477
+2025-09-12 13:26:37,238 - INFO - Epoch 1450, Loss: 180.739838
+2025-09-12 13:26:37,789 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_1450.pth
+2025-09-12 13:26:41,417 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_1450_classes_0-1.png
+2025-09-12 13:26:42,850 - INFO - Epoch 1460, Loss: 180.991547
+2025-09-12 13:26:44,459 - INFO - Epoch 1470, Loss: 163.382568
+2025-09-12 13:26:46,117 - INFO - Epoch 1480, Loss: 180.670441
+2025-09-12 13:26:47,573 - INFO - Epoch 1490, Loss: 157.007690
+2025-09-12 13:26:49,121 - INFO - Epoch 1500, Loss: 157.157715
+2025-09-12 13:26:49,690 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_1500.pth
+2025-09-12 13:26:53,309 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_1500_classes_0-1.png
+2025-09-12 13:26:54,796 - INFO - Epoch 1510, Loss: 114.911072
+2025-09-12 13:26:57,712 - INFO - New best model saved (loss: 114.911072)
+2025-09-12 13:26:59,231 - INFO - Epoch 1520, Loss: 150.374847
+2025-09-12 13:27:00,533 - INFO - Epoch 1530, Loss: 183.237823
+2025-09-12 13:27:01,994 - INFO - Epoch 1540, Loss: 168.925034
+2025-09-12 13:27:03,374 - INFO - Epoch 1550, Loss: 141.483994
+2025-09-12 13:27:03,931 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_1550.pth
+2025-09-12 13:27:07,566 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_1550_classes_0-1.png
+2025-09-12 13:27:09,068 - INFO - Epoch 1560, Loss: 183.917847
+2025-09-12 13:27:10,470 - INFO - Epoch 1570, Loss: 185.085800
+2025-09-12 13:27:11,830 - INFO - Epoch 1580, Loss: 184.185333
+2025-09-12 13:27:13,172 - INFO - Epoch 1590, Loss: 188.242554
+2025-09-12 13:27:14,497 - INFO - Epoch 1600, Loss: 148.969086
+2025-09-12 13:27:15,062 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_1600.pth
+2025-09-12 13:27:18,739 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_1600_classes_0-1.png
+2025-09-12 13:27:20,187 - INFO - Epoch 1610, Loss: 154.939514
+2025-09-12 13:27:21,608 - INFO - Epoch 1620, Loss: 182.595215
+2025-09-12 13:27:22,885 - INFO - Epoch 1630, Loss: 136.093857
+2025-09-12 13:27:24,301 - INFO - Epoch 1640, Loss: 199.777069
+2025-09-12 13:27:25,813 - INFO - Epoch 1650, Loss: 166.148865
+2025-09-12 13:27:26,373 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_1650.pth
+2025-09-12 13:27:30,009 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_1650_classes_0-1.png
+2025-09-12 13:27:31,556 - INFO - Epoch 1660, Loss: 174.560349
+2025-09-12 13:27:33,123 - INFO - Epoch 1670, Loss: 167.464050
+2025-09-12 13:27:34,501 - INFO - Epoch 1680, Loss: 139.568481
+2025-09-12 13:27:36,011 - INFO - Epoch 1690, Loss: 162.306122
+2025-09-12 13:27:37,537 - INFO - Epoch 1700, Loss: 143.008896
+2025-09-12 13:27:38,095 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_1700.pth
+2025-09-12 13:27:41,700 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_1700_classes_0-1.png
+2025-09-12 13:27:43,178 - INFO - Epoch 1710, Loss: 147.744263
+2025-09-12 13:27:44,586 - INFO - Epoch 1720, Loss: 130.951645
+2025-09-12 13:27:45,950 - INFO - Epoch 1730, Loss: 130.909088
+2025-09-12 13:27:47,297 - INFO - Epoch 1740, Loss: 128.224106
+2025-09-12 13:27:48,632 - INFO - Epoch 1750, Loss: 149.121429
+2025-09-12 13:27:49,207 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_1750.pth
+2025-09-12 13:27:52,828 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_1750_classes_0-1.png
+2025-09-12 13:27:54,432 - INFO - Epoch 1760, Loss: 118.952026
+2025-09-12 13:27:55,971 - INFO - Epoch 1770, Loss: 192.141434
+2025-09-12 13:27:57,277 - INFO - Epoch 1780, Loss: 165.154755
+2025-09-12 13:27:58,687 - INFO - Epoch 1790, Loss: 137.980301
+2025-09-12 13:28:00,165 - INFO - Epoch 1800, Loss: 146.765106
+2025-09-12 13:28:00,717 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_1800.pth
+2025-09-12 13:28:04,330 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_1800_classes_0-1.png
+2025-09-12 13:28:05,805 - INFO - Epoch 1810, Loss: 155.435837
+2025-09-12 13:28:07,217 - INFO - Epoch 1820, Loss: 150.168289
+2025-09-12 13:28:08,801 - INFO - Epoch 1830, Loss: 155.610611
+2025-09-12 13:28:12,875 - INFO - New best model saved (loss: 112.717613)
+2025-09-12 13:28:13,757 - INFO - Epoch 1840, Loss: 145.497681
+2025-09-12 13:28:17,290 - INFO - New best model saved (loss: 107.188232)
+2025-09-12 13:28:18,127 - INFO - Epoch 1850, Loss: 168.264450
+2025-09-12 13:28:18,690 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_1850.pth
+2025-09-12 13:28:22,335 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_1850_classes_0-1.png
+2025-09-12 13:28:23,851 - INFO - Epoch 1860, Loss: 140.812485
+2025-09-12 13:28:25,216 - INFO - Epoch 1870, Loss: 159.754181
+2025-09-12 13:28:26,679 - INFO - Epoch 1880, Loss: 147.123474
+2025-09-12 13:28:27,891 - INFO - Epoch 1890, Loss: 163.619766
+2025-09-12 13:28:29,165 - INFO - Epoch 1900, Loss: 137.433502
+2025-09-12 13:28:29,725 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_1900.pth
+2025-09-12 13:28:33,361 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_1900_classes_0-1.png
+2025-09-12 13:28:34,890 - INFO - Epoch 1910, Loss: 153.122894
+2025-09-12 13:28:36,376 - INFO - Epoch 1920, Loss: 162.683441
+2025-09-12 13:28:37,718 - INFO - Epoch 1930, Loss: 171.076828
+2025-09-12 13:28:39,073 - INFO - Epoch 1940, Loss: 184.110367
+2025-09-12 13:28:40,343 - INFO - Epoch 1950, Loss: 119.183929
+2025-09-12 13:28:41,056 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_1950.pth
+2025-09-12 13:28:44,679 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_1950_classes_0-1.png
+2025-09-12 13:28:46,210 - INFO - Epoch 1960, Loss: 156.084473
+2025-09-12 13:28:47,597 - INFO - Epoch 1970, Loss: 152.463013
+2025-09-12 13:28:49,104 - INFO - Epoch 1980, Loss: 156.824142
+2025-09-12 13:28:50,666 - INFO - Epoch 1990, Loss: 148.240921
+2025-09-12 13:28:52,129 - INFO - Epoch 2000, Loss: 181.596222
+2025-09-12 13:28:52,695 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_2000.pth
+2025-09-12 13:28:56,307 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_2000_classes_0-1.png
+2025-09-12 13:28:57,717 - INFO - Epoch 2010, Loss: 167.526154
+2025-09-12 13:28:59,204 - INFO - Epoch 2020, Loss: 131.460419
+2025-09-12 13:29:00,866 - INFO - Epoch 2030, Loss: 139.197708
+2025-09-12 13:29:02,244 - INFO - Epoch 2040, Loss: 130.727783
+2025-09-12 13:29:03,618 - INFO - Epoch 2050, Loss: 146.114670
+2025-09-12 13:29:04,171 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_2050.pth
+2025-09-12 13:29:07,776 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_2050_classes_0-1.png
+2025-09-12 13:29:09,356 - INFO - Epoch 2060, Loss: 178.330902
+2025-09-12 13:29:10,810 - INFO - Epoch 2070, Loss: 163.318893
+2025-09-12 13:29:12,239 - INFO - Epoch 2080, Loss: 150.624374
+2025-09-12 13:29:13,775 - INFO - Epoch 2090, Loss: 155.770996
+2025-09-12 13:29:15,382 - INFO - Epoch 2100, Loss: 169.700012
+2025-09-12 13:29:15,946 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_2100.pth
+2025-09-12 13:29:19,565 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_2100_classes_0-1.png
+2025-09-12 13:29:21,064 - INFO - Epoch 2110, Loss: 145.129456
+2025-09-12 13:29:22,609 - INFO - Epoch 2120, Loss: 170.894043
+2025-09-12 13:29:24,183 - INFO - Epoch 2130, Loss: 134.883240
+2025-09-12 13:29:25,656 - INFO - Epoch 2140, Loss: 147.336411
+2025-09-12 13:29:27,149 - INFO - Epoch 2150, Loss: 157.567123
+2025-09-12 13:29:27,708 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_2150.pth
+2025-09-12 13:29:31,506 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_2150_classes_0-1.png
+2025-09-12 13:29:33,102 - INFO - Epoch 2160, Loss: 181.560059
+2025-09-12 13:29:34,333 - INFO - Epoch 2170, Loss: 130.566132
+2025-09-12 13:29:35,728 - INFO - Epoch 2180, Loss: 156.575699
+2025-09-12 13:29:37,204 - INFO - Epoch 2190, Loss: 140.035278
+2025-09-12 13:29:38,511 - INFO - Epoch 2200, Loss: 140.282135
+2025-09-12 13:29:39,090 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_2200.pth
+2025-09-12 13:29:42,717 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_2200_classes_0-1.png
+2025-09-12 13:29:44,066 - INFO - Epoch 2210, Loss: 145.864136
+2025-09-12 13:29:45,644 - INFO - Epoch 2220, Loss: 131.017960
+2025-09-12 13:29:47,179 - INFO - Epoch 2230, Loss: 170.579788
+2025-09-12 13:29:48,421 - INFO - Epoch 2240, Loss: 135.037033
+2025-09-12 13:29:49,670 - INFO - Epoch 2250, Loss: 177.696198
+2025-09-12 13:29:50,227 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_2250.pth
+2025-09-12 13:29:53,843 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_2250_classes_0-1.png
+2025-09-12 13:29:55,448 - INFO - Epoch 2260, Loss: 135.064026
+2025-09-12 13:29:56,862 - INFO - Epoch 2270, Loss: 167.204712
+2025-09-12 13:29:58,333 - INFO - Epoch 2280, Loss: 121.830620
+2025-09-12 13:29:59,863 - INFO - Epoch 2290, Loss: 136.293411
+2025-09-12 13:30:01,405 - INFO - Epoch 2300, Loss: 130.910889
+2025-09-12 13:30:01,978 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_2300.pth
+2025-09-12 13:30:05,592 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_2300_classes_0-1.png
+2025-09-12 13:30:07,043 - INFO - Epoch 2310, Loss: 153.273865
+2025-09-12 13:30:08,354 - INFO - Epoch 2320, Loss: 132.573547
+2025-09-12 13:30:09,800 - INFO - Epoch 2330, Loss: 132.062500
+2025-09-12 13:30:11,446 - INFO - Epoch 2340, Loss: 152.556244
+2025-09-12 13:30:12,816 - INFO - Epoch 2350, Loss: 145.724121
+2025-09-12 13:30:13,366 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_2350.pth
+2025-09-12 13:30:17,122 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_2350_classes_0-1.png
+2025-09-12 13:30:18,417 - INFO - Epoch 2360, Loss: 125.926323
+2025-09-12 13:30:19,795 - INFO - Epoch 2370, Loss: 140.612762
+2025-09-12 13:30:21,243 - INFO - Epoch 2380, Loss: 125.486923
+2025-09-12 13:30:22,760 - INFO - Epoch 2390, Loss: 133.289764
+2025-09-12 13:30:24,257 - INFO - Epoch 2400, Loss: 142.550217
+2025-09-12 13:30:24,832 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_2400.pth
+2025-09-12 13:30:28,444 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_2400_classes_0-1.png
+2025-09-12 13:30:29,937 - INFO - Epoch 2410, Loss: 129.701294
+2025-09-12 13:30:31,309 - INFO - Epoch 2420, Loss: 150.568939
+2025-09-12 13:30:32,574 - INFO - Epoch 2430, Loss: 135.343491
+2025-09-12 13:30:34,066 - INFO - Epoch 2440, Loss: 148.618042
+2025-09-12 13:30:35,323 - INFO - Epoch 2450, Loss: 137.206879
+2025-09-12 13:30:35,900 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_2450.pth
+2025-09-12 13:30:39,517 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_2450_classes_0-1.png
+2025-09-12 13:30:40,889 - INFO - Epoch 2460, Loss: 162.643829
+2025-09-12 13:30:42,197 - INFO - Epoch 2470, Loss: 124.442787
+2025-09-12 13:30:43,599 - INFO - Epoch 2480, Loss: 152.930115
+2025-09-12 13:30:45,230 - INFO - Epoch 2490, Loss: 136.519852
+2025-09-12 13:30:46,738 - INFO - Epoch 2500, Loss: 149.147675
+2025-09-12 13:30:47,289 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_2500.pth
+2025-09-12 13:30:50,893 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_2500_classes_0-1.png
+2025-09-12 13:30:52,159 - INFO - Epoch 2510, Loss: 142.887543
+2025-09-12 13:30:53,547 - INFO - Epoch 2520, Loss: 149.337219
+2025-09-12 13:30:54,976 - INFO - Epoch 2530, Loss: 203.273926
+2025-09-12 13:30:56,529 - INFO - Epoch 2540, Loss: 139.296021
+2025-09-12 13:30:58,021 - INFO - Epoch 2550, Loss: 148.968246
+2025-09-12 13:30:58,579 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_2550.pth
+2025-09-12 13:31:02,189 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_2550_classes_0-1.png
+2025-09-12 13:31:03,669 - INFO - Epoch 2560, Loss: 139.618988
+2025-09-12 13:31:04,992 - INFO - Epoch 2570, Loss: 119.223907
+2025-09-12 13:31:06,600 - INFO - Epoch 2580, Loss: 135.580383
+2025-09-12 13:31:07,933 - INFO - Epoch 2590, Loss: 144.821426
+2025-09-12 13:31:09,276 - INFO - Epoch 2600, Loss: 132.306000
+2025-09-12 13:31:09,836 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_2600.pth
+2025-09-12 13:31:13,424 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_2600_classes_0-1.png
+2025-09-12 13:31:14,878 - INFO - Epoch 2610, Loss: 148.178543
+2025-09-12 13:31:16,204 - INFO - Epoch 2620, Loss: 124.966187
+2025-09-12 13:31:17,695 - INFO - Epoch 2630, Loss: 141.204010
+2025-09-12 13:31:19,313 - INFO - Epoch 2640, Loss: 138.750183
+2025-09-12 13:31:20,705 - INFO - Epoch 2650, Loss: 126.090561
+2025-09-12 13:31:21,260 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_2650.pth
+2025-09-12 13:31:24,867 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_2650_classes_0-1.png
+2025-09-12 13:31:26,454 - INFO - Epoch 2660, Loss: 135.647049
+2025-09-12 13:31:27,808 - INFO - Epoch 2670, Loss: 145.055084
+2025-09-12 13:31:28,999 - INFO - Epoch 2680, Loss: 146.416656
+2025-09-12 13:31:30,456 - INFO - Epoch 2690, Loss: 126.882645
+2025-09-12 13:31:31,792 - INFO - Epoch 2700, Loss: 149.899689
+2025-09-12 13:31:32,355 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_2700.pth
+2025-09-12 13:31:35,959 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_2700_classes_0-1.png
+2025-09-12 13:31:37,358 - INFO - Epoch 2710, Loss: 133.911316
+2025-09-12 13:31:38,766 - INFO - Epoch 2720, Loss: 147.488220
+2025-09-12 13:31:43,001 - INFO - New best model saved (loss: 102.788376)
+2025-09-12 13:31:43,150 - INFO - Epoch 2730, Loss: 141.597595
+2025-09-12 13:31:44,458 - INFO - Epoch 2740, Loss: 144.258850
+2025-09-12 13:31:45,869 - INFO - Epoch 2750, Loss: 147.137146
+2025-09-12 13:31:46,421 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_2750.pth
+2025-09-12 13:31:50,037 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_2750_classes_0-1.png
+2025-09-12 13:31:51,526 - INFO - Epoch 2760, Loss: 127.444992
+2025-09-12 13:31:52,849 - INFO - Epoch 2770, Loss: 132.781647
+2025-09-12 13:31:54,149 - INFO - Epoch 2780, Loss: 186.193054
+2025-09-12 13:31:55,637 - INFO - Epoch 2790, Loss: 124.126816
+2025-09-12 13:31:57,033 - INFO - Epoch 2800, Loss: 149.447205
+2025-09-12 13:31:57,586 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_2800.pth
+2025-09-12 13:32:01,174 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_2800_classes_0-1.png
+2025-09-12 13:32:02,416 - INFO - Epoch 2810, Loss: 116.694000
+2025-09-12 13:32:03,886 - INFO - Epoch 2820, Loss: 165.672302
+2025-09-12 13:32:05,256 - INFO - Epoch 2830, Loss: 143.625015
+2025-09-12 13:32:06,693 - INFO - Epoch 2840, Loss: 166.541321
+2025-09-12 13:32:07,867 - INFO - Epoch 2850, Loss: 180.230179
+2025-09-12 13:32:08,426 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_2850.pth
+2025-09-12 13:32:12,036 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_2850_classes_0-1.png
+2025-09-12 13:32:13,430 - INFO - Epoch 2860, Loss: 141.818970
+2025-09-12 13:32:15,098 - INFO - Epoch 2870, Loss: 126.294159
+2025-09-12 13:32:16,594 - INFO - Epoch 2880, Loss: 152.247772
+2025-09-12 13:32:18,001 - INFO - Epoch 2890, Loss: 175.685379
+2025-09-12 13:32:19,359 - INFO - Epoch 2900, Loss: 133.432770
+2025-09-12 13:32:19,917 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_2900.pth
+2025-09-12 13:32:23,506 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_2900_classes_0-1.png
+2025-09-12 13:32:25,057 - INFO - Epoch 2910, Loss: 157.825562
+2025-09-12 13:32:26,568 - INFO - Epoch 2920, Loss: 125.613113
+2025-09-12 13:32:28,086 - INFO - Epoch 2930, Loss: 140.186935
+2025-09-12 13:32:33,269 - INFO - New best model saved (loss: 98.279411)
+2025-09-12 13:32:34,314 - INFO - Epoch 2940, Loss: 119.415405
+2025-09-12 13:32:35,811 - INFO - Epoch 2950, Loss: 156.718140
+2025-09-12 13:32:36,383 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_2950.pth
+2025-09-12 13:32:40,159 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_2950_classes_0-1.png
+2025-09-12 13:32:41,754 - INFO - Epoch 2960, Loss: 108.046173
+2025-09-12 13:32:43,185 - INFO - Epoch 2970, Loss: 119.966599
+2025-09-12 13:32:44,576 - INFO - Epoch 2980, Loss: 130.119568
+2025-09-12 13:32:45,832 - INFO - Epoch 2990, Loss: 142.575775
+2025-09-12 13:32:47,145 - INFO - Epoch 3000, Loss: 146.919052
+2025-09-12 13:32:47,698 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_3000.pth
+2025-09-12 13:32:51,288 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_3000_classes_0-1.png
+2025-09-12 13:32:52,792 - INFO - Epoch 3010, Loss: 126.979935
+2025-09-12 13:32:54,108 - INFO - Epoch 3020, Loss: 130.076843
+2025-09-12 13:32:55,781 - INFO - Epoch 3030, Loss: 135.463364
+2025-09-12 13:32:57,243 - INFO - Epoch 3040, Loss: 138.812347
+2025-09-12 13:32:58,644 - INFO - Epoch 3050, Loss: 147.582474
+2025-09-12 13:32:59,215 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_3050.pth
+2025-09-12 13:33:02,803 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_3050_classes_0-1.png
+2025-09-12 13:33:04,294 - INFO - Epoch 3060, Loss: 128.166000
+2025-09-12 13:33:05,662 - INFO - Epoch 3070, Loss: 147.159332
+2025-09-12 13:33:06,977 - INFO - Epoch 3080, Loss: 130.441986
+2025-09-12 13:33:08,360 - INFO - Epoch 3090, Loss: 143.782394
+2025-09-12 13:33:09,613 - INFO - Epoch 3100, Loss: 114.913177
+2025-09-12 13:33:10,166 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_3100.pth
+2025-09-12 13:33:13,760 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_3100_classes_0-1.png
+2025-09-12 13:33:15,005 - INFO - Epoch 3110, Loss: 124.819328
+2025-09-12 13:33:16,296 - INFO - Epoch 3120, Loss: 127.233437
+2025-09-12 13:33:17,646 - INFO - Epoch 3130, Loss: 131.559692
+2025-09-12 13:33:18,909 - INFO - Epoch 3140, Loss: 143.120056
+2025-09-12 13:33:20,389 - INFO - Epoch 3150, Loss: 109.147850
+2025-09-12 13:33:20,952 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_3150.pth
+2025-09-12 13:33:24,539 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_3150_classes_0-1.png
+2025-09-12 13:33:26,060 - INFO - Epoch 3160, Loss: 149.465515
+2025-09-12 13:33:27,578 - INFO - Epoch 3170, Loss: 139.432037
+2025-09-12 13:33:29,145 - INFO - Epoch 3180, Loss: 151.480347
+2025-09-12 13:33:30,556 - INFO - Epoch 3190, Loss: 137.064697
+2025-09-12 13:33:31,885 - INFO - Epoch 3200, Loss: 122.616394
+2025-09-12 13:33:32,436 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_3200.pth
+2025-09-12 13:33:36,044 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_3200_classes_0-1.png
+2025-09-12 13:33:37,716 - INFO - Epoch 3210, Loss: 153.277985
+2025-09-12 13:33:39,266 - INFO - Epoch 3220, Loss: 149.629654
+2025-09-12 13:33:40,645 - INFO - Epoch 3230, Loss: 117.406036
+2025-09-12 13:33:41,978 - INFO - Epoch 3240, Loss: 124.733261
+2025-09-12 13:33:43,327 - INFO - Epoch 3250, Loss: 124.742447
+2025-09-12 13:33:43,896 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_3250.pth
+2025-09-12 13:33:47,488 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_3250_classes_0-1.png
+2025-09-12 13:33:49,096 - INFO - Epoch 3260, Loss: 137.356201
+2025-09-12 13:33:50,726 - INFO - Epoch 3270, Loss: 158.723145
+2025-09-12 13:33:52,014 - INFO - Epoch 3280, Loss: 133.206238
+2025-09-12 13:33:53,326 - INFO - Epoch 3290, Loss: 163.560883
+2025-09-12 13:33:55,066 - INFO - Epoch 3300, Loss: 167.459595
+2025-09-12 13:33:55,616 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_3300.pth
+2025-09-12 13:33:59,219 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_3300_classes_0-1.png
+2025-09-12 13:34:00,754 - INFO - Epoch 3310, Loss: 135.219757
+2025-09-12 13:34:02,059 - INFO - Epoch 3320, Loss: 154.357498
+2025-09-12 13:34:03,378 - INFO - Epoch 3330, Loss: 133.851929
+2025-09-12 13:34:04,697 - INFO - Epoch 3340, Loss: 121.544212
+2025-09-12 13:34:06,217 - INFO - Epoch 3350, Loss: 125.551979
+2025-09-12 13:34:06,785 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_3350.pth
+2025-09-12 13:34:10,569 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_3350_classes_0-1.png
+2025-09-12 13:34:12,133 - INFO - Epoch 3360, Loss: 130.103348
+2025-09-12 13:34:13,386 - INFO - Epoch 3370, Loss: 147.417908
+2025-09-12 13:34:14,693 - INFO - Epoch 3380, Loss: 141.743637
+2025-09-12 13:34:16,051 - INFO - Epoch 3390, Loss: 124.452530
+2025-09-12 13:34:17,368 - INFO - Epoch 3400, Loss: 149.484909
+2025-09-12 13:34:17,929 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_3400.pth
+2025-09-12 13:34:21,514 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_3400_classes_0-1.png
+2025-09-12 13:34:23,077 - INFO - Epoch 3410, Loss: 143.266022
+2025-09-12 13:34:24,630 - INFO - Epoch 3420, Loss: 159.790039
+2025-09-12 13:34:26,048 - INFO - Epoch 3430, Loss: 103.803345
+2025-09-12 13:34:27,558 - INFO - Epoch 3440, Loss: 122.065125
+2025-09-12 13:34:29,122 - INFO - Epoch 3450, Loss: 141.369507
+2025-09-12 13:34:29,695 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_3450.pth
+2025-09-12 13:34:33,317 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_3450_classes_0-1.png
+2025-09-12 13:34:34,933 - INFO - Epoch 3460, Loss: 143.554520
+2025-09-12 13:34:36,337 - INFO - Epoch 3470, Loss: 156.350357
+2025-09-12 13:34:37,714 - INFO - Epoch 3480, Loss: 132.351486
+2025-09-12 13:34:39,063 - INFO - Epoch 3490, Loss: 130.982086
+2025-09-12 13:34:40,438 - INFO - Epoch 3500, Loss: 132.422607
+2025-09-12 13:34:40,992 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_3500.pth
+2025-09-12 13:34:44,577 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_3500_classes_0-1.png
+2025-09-12 13:34:45,969 - INFO - Epoch 3510, Loss: 175.431213
+2025-09-12 13:34:47,332 - INFO - Epoch 3520, Loss: 125.251198
+2025-09-12 13:34:48,555 - INFO - Epoch 3530, Loss: 142.297684
+2025-09-12 13:34:49,941 - INFO - Epoch 3540, Loss: 129.582458
+2025-09-12 13:34:51,338 - INFO - Epoch 3550, Loss: 146.775116
+2025-09-12 13:34:51,895 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_3550.pth
+2025-09-12 13:34:55,507 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_3550_classes_0-1.png
+2025-09-12 13:34:57,054 - INFO - Epoch 3560, Loss: 103.920227
+2025-09-12 13:34:58,418 - INFO - Epoch 3570, Loss: 145.949509
+2025-09-12 13:34:59,740 - INFO - Epoch 3580, Loss: 146.680176
+2025-09-12 13:35:01,149 - INFO - Epoch 3590, Loss: 145.737000
+2025-09-12 13:35:02,620 - INFO - Epoch 3600, Loss: 127.710999
+2025-09-12 13:35:03,186 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_3600.pth
+2025-09-12 13:35:06,788 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_3600_classes_0-1.png
+2025-09-12 13:35:08,288 - INFO - Epoch 3610, Loss: 130.698029
+2025-09-12 13:35:09,727 - INFO - Epoch 3620, Loss: 139.696426
+2025-09-12 13:35:11,249 - INFO - Epoch 3630, Loss: 133.478729
+2025-09-12 13:35:12,907 - INFO - Epoch 3640, Loss: 127.940956
+2025-09-12 13:35:14,283 - INFO - Epoch 3650, Loss: 125.915581
+2025-09-12 13:35:14,839 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_3650.pth
+2025-09-12 13:35:18,407 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_3650_classes_0-1.png
+2025-09-12 13:35:19,715 - INFO - Epoch 3660, Loss: 139.976883
+2025-09-12 13:35:21,331 - INFO - Epoch 3670, Loss: 143.855057
+2025-09-12 13:35:22,883 - INFO - Epoch 3680, Loss: 136.117004
+2025-09-12 13:35:24,341 - INFO - Epoch 3690, Loss: 138.636856
+2025-09-12 13:35:25,674 - INFO - Epoch 3700, Loss: 112.471481
+2025-09-12 13:35:26,243 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_3700.pth
+2025-09-12 13:35:29,857 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_3700_classes_0-1.png
+2025-09-12 13:35:31,087 - INFO - Epoch 3710, Loss: 117.273163
+2025-09-12 13:35:32,321 - INFO - Epoch 3720, Loss: 179.568329
+2025-09-12 13:35:33,598 - INFO - Epoch 3730, Loss: 114.732262
+2025-09-12 13:35:34,949 - INFO - Epoch 3740, Loss: 136.939026
+2025-09-12 13:35:36,425 - INFO - Epoch 3750, Loss: 125.630035
+2025-09-12 13:35:36,995 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_3750.pth
+2025-09-12 13:35:40,578 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_3750_classes_0-1.png
+2025-09-12 13:35:41,812 - INFO - Epoch 3760, Loss: 134.970657
+2025-09-12 13:35:43,192 - INFO - Epoch 3770, Loss: 128.743652
+2025-09-12 13:35:44,672 - INFO - Epoch 3780, Loss: 159.374481
+2025-09-12 13:35:45,986 - INFO - Epoch 3790, Loss: 142.425476
+2025-09-12 13:35:47,485 - INFO - Epoch 3800, Loss: 121.698853
+2025-09-12 13:35:48,188 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_3800.pth
+2025-09-12 13:35:51,782 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_3800_classes_0-1.png
+2025-09-12 13:35:53,469 - INFO - Epoch 3810, Loss: 110.168335
+2025-09-12 13:35:54,994 - INFO - Epoch 3820, Loss: 139.717422
+2025-09-12 13:35:56,331 - INFO - Epoch 3830, Loss: 137.609711
+2025-09-12 13:35:57,759 - INFO - Epoch 3840, Loss: 109.802048
+2025-09-12 13:35:59,155 - INFO - Epoch 3850, Loss: 134.803757
+2025-09-12 13:35:59,733 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_3850.pth
+2025-09-12 13:36:03,320 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_3850_classes_0-1.png
+2025-09-12 13:36:04,549 - INFO - Epoch 3860, Loss: 123.431854
+2025-09-12 13:36:05,826 - INFO - Epoch 3870, Loss: 151.423309
+2025-09-12 13:36:07,093 - INFO - Epoch 3880, Loss: 116.796921
+2025-09-12 13:36:08,555 - INFO - Epoch 3890, Loss: 117.586212
+2025-09-12 13:36:10,156 - INFO - Epoch 3900, Loss: 116.434479
+2025-09-12 13:36:10,718 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_3900.pth
+2025-09-12 13:36:14,309 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_3900_classes_0-1.png
+2025-09-12 13:36:15,980 - INFO - Epoch 3910, Loss: 113.992630
+2025-09-12 13:36:17,286 - INFO - Epoch 3920, Loss: 120.655121
+2025-09-12 13:36:18,774 - INFO - Epoch 3930, Loss: 117.243141
+2025-09-12 13:36:20,318 - INFO - Epoch 3940, Loss: 130.418427
+2025-09-12 13:36:21,886 - INFO - Epoch 3950, Loss: 160.422333
+2025-09-12 13:36:22,440 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_3950.pth
+2025-09-12 13:36:26,042 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_3950_classes_0-1.png
+2025-09-12 13:36:27,291 - INFO - Epoch 3960, Loss: 109.337540
+2025-09-12 13:36:28,465 - INFO - Epoch 3970, Loss: 164.783752
+2025-09-12 13:36:29,834 - INFO - Epoch 3980, Loss: 147.044571
+2025-09-12 13:36:31,478 - INFO - Epoch 3990, Loss: 130.793732
+2025-09-12 13:36:32,861 - INFO - Epoch 4000, Loss: 124.205933
+2025-09-12 13:36:33,419 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_4000.pth
+2025-09-12 13:36:37,003 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_4000_classes_0-1.png
+2025-09-12 13:36:38,514 - INFO - Epoch 4010, Loss: 120.863235
+2025-09-12 13:36:40,088 - INFO - Epoch 4020, Loss: 110.773682
+2025-09-12 13:36:41,692 - INFO - Epoch 4030, Loss: 130.245026
+2025-09-12 13:36:42,966 - INFO - Epoch 4040, Loss: 131.153778
+2025-09-12 13:36:44,266 - INFO - Epoch 4050, Loss: 129.909027
+2025-09-12 13:36:44,832 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_4050.pth
+2025-09-12 13:36:48,452 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_4050_classes_0-1.png
+2025-09-12 13:36:53,573 - INFO - New best model saved (loss: 95.789543)
+2025-09-12 13:36:54,147 - INFO - Epoch 4060, Loss: 103.964027
+2025-09-12 13:36:55,590 - INFO - Epoch 4070, Loss: 134.470245
+2025-09-12 13:36:57,048 - INFO - Epoch 4080, Loss: 111.391998
+2025-09-12 13:36:58,381 - INFO - Epoch 4090, Loss: 119.266357
+2025-09-12 13:36:59,714 - INFO - Epoch 4100, Loss: 114.158844
+2025-09-12 13:37:00,276 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_4100.pth
+2025-09-12 13:37:03,874 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_4100_classes_0-1.png
+2025-09-12 13:37:05,450 - INFO - Epoch 4110, Loss: 117.034225
+2025-09-12 13:37:06,957 - INFO - Epoch 4120, Loss: 148.068527
+2025-09-12 13:37:08,373 - INFO - Epoch 4130, Loss: 118.908089
+2025-09-12 13:37:09,675 - INFO - Epoch 4140, Loss: 100.903824
+2025-09-12 13:37:11,027 - INFO - Epoch 4150, Loss: 120.820236
+2025-09-12 13:37:11,586 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_4150.pth
+2025-09-12 13:37:15,187 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_4150_classes_0-1.png
+2025-09-12 13:37:20,105 - INFO - New best model saved (loss: 93.386772)
+2025-09-12 13:37:20,608 - INFO - Epoch 4160, Loss: 134.990662
+2025-09-12 13:37:22,354 - INFO - Epoch 4170, Loss: 130.390564
+2025-09-12 13:37:23,725 - INFO - Epoch 4180, Loss: 116.770348
+2025-09-12 13:37:25,046 - INFO - Epoch 4190, Loss: 167.956848
+2025-09-12 13:37:26,518 - INFO - Epoch 4200, Loss: 129.392975
+2025-09-12 13:37:27,088 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_4200.pth
+2025-09-12 13:37:30,679 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_4200_classes_0-1.png
+2025-09-12 13:37:31,962 - INFO - Epoch 4210, Loss: 124.931259
+2025-09-12 13:37:33,249 - INFO - Epoch 4220, Loss: 101.907623
+2025-09-12 13:37:34,560 - INFO - Epoch 4230, Loss: 112.370300
+2025-09-12 13:37:36,043 - INFO - Epoch 4240, Loss: 154.244781
+2025-09-12 13:37:37,406 - INFO - Epoch 4250, Loss: 126.710983
+2025-09-12 13:37:37,958 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_4250.pth
+2025-09-12 13:37:41,545 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_4250_classes_0-1.png
+2025-09-12 13:37:42,785 - INFO - Epoch 4260, Loss: 117.707664
+2025-09-12 13:37:44,266 - INFO - Epoch 4270, Loss: 165.505508
+2025-09-12 13:37:45,874 - INFO - Epoch 4280, Loss: 152.779633
+2025-09-12 13:37:47,303 - INFO - Epoch 4290, Loss: 116.966629
+2025-09-12 13:37:48,686 - INFO - Epoch 4300, Loss: 151.778137
+2025-09-12 13:37:49,242 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_4300.pth
+2025-09-12 13:37:52,866 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_4300_classes_0-1.png
+2025-09-12 13:37:54,594 - INFO - Epoch 4310, Loss: 161.591766
+2025-09-12 13:37:55,912 - INFO - Epoch 4320, Loss: 109.515381
+2025-09-12 13:37:57,219 - INFO - Epoch 4330, Loss: 134.285995
+2025-09-12 13:37:58,704 - INFO - Epoch 4340, Loss: 116.994064
+2025-09-12 13:38:00,027 - INFO - Epoch 4350, Loss: 127.248558
+2025-09-12 13:38:00,591 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_4350.pth
+2025-09-12 13:38:04,209 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_4350_classes_0-1.png
+2025-09-12 13:38:05,786 - INFO - Epoch 4360, Loss: 114.564590
+2025-09-12 13:38:07,257 - INFO - Epoch 4370, Loss: 152.109436
+2025-09-12 13:38:08,770 - INFO - Epoch 4380, Loss: 125.387627
+2025-09-12 13:38:10,360 - INFO - Epoch 4390, Loss: 134.832336
+2025-09-12 13:38:11,919 - INFO - Epoch 4400, Loss: 123.744095
+2025-09-12 13:38:12,638 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_4400.pth
+2025-09-12 13:38:16,213 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_4400_classes_0-1.png
+2025-09-12 13:38:17,775 - INFO - Epoch 4410, Loss: 111.128723
+2025-09-12 13:38:19,450 - INFO - Epoch 4420, Loss: 145.924637
+2025-09-12 13:38:20,822 - INFO - Epoch 4430, Loss: 123.138107
+2025-09-12 13:38:22,404 - INFO - Epoch 4440, Loss: 126.296059
+2025-09-12 13:38:23,876 - INFO - Epoch 4450, Loss: 139.052460
+2025-09-12 13:38:24,436 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_4450.pth
+2025-09-12 13:38:28,046 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_4450_classes_0-1.png
+2025-09-12 13:38:29,539 - INFO - Epoch 4460, Loss: 127.766182
+2025-09-12 13:38:31,049 - INFO - Epoch 4470, Loss: 135.227844
+2025-09-12 13:38:32,562 - INFO - Epoch 4480, Loss: 138.451309
+2025-09-12 13:38:33,976 - INFO - Epoch 4490, Loss: 114.953964
+2025-09-12 13:38:35,376 - INFO - Epoch 4500, Loss: 165.848404
+2025-09-12 13:38:35,965 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_4500.pth
+2025-09-12 13:38:39,575 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_4500_classes_0-1.png
+2025-09-12 13:38:41,118 - INFO - Epoch 4510, Loss: 149.802612
+2025-09-12 13:38:42,648 - INFO - Epoch 4520, Loss: 132.516357
+2025-09-12 13:38:44,066 - INFO - Epoch 4530, Loss: 107.733757
+2025-09-12 13:38:45,631 - INFO - Epoch 4540, Loss: 140.402435
+2025-09-12 13:38:46,969 - INFO - Epoch 4550, Loss: 121.963333
+2025-09-12 13:38:47,546 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_4550.pth
+2025-09-12 13:38:51,127 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_4550_classes_0-1.png
+2025-09-12 13:38:52,593 - INFO - Epoch 4560, Loss: 136.119537
+2025-09-12 13:38:54,057 - INFO - Epoch 4570, Loss: 113.006561
+2025-09-12 13:38:55,391 - INFO - Epoch 4580, Loss: 113.587906
+2025-09-12 13:38:56,747 - INFO - Epoch 4590, Loss: 103.240685
+2025-09-12 13:39:01,164 - INFO - New best model saved (loss: 93.161072)
+2025-09-12 13:39:01,402 - INFO - Epoch 4600, Loss: 117.733932
+2025-09-12 13:39:01,980 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_4600.pth
+2025-09-12 13:39:05,737 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_4600_classes_0-1.png
+2025-09-12 13:39:07,260 - INFO - Epoch 4610, Loss: 119.511124
+2025-09-12 13:39:08,802 - INFO - Epoch 4620, Loss: 101.377075
+2025-09-12 13:39:10,418 - INFO - Epoch 4630, Loss: 115.330505
+2025-09-12 13:39:11,978 - INFO - Epoch 4640, Loss: 126.974762
+2025-09-12 13:39:13,427 - INFO - Epoch 4650, Loss: 137.863327
+2025-09-12 13:39:13,992 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_4650.pth
+2025-09-12 13:39:17,575 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_4650_classes_0-1.png
+2025-09-12 13:39:19,243 - INFO - Epoch 4660, Loss: 138.564331
+2025-09-12 13:39:20,750 - INFO - Epoch 4670, Loss: 124.083382
+2025-09-12 13:39:21,972 - INFO - Epoch 4680, Loss: 117.178818
+2025-09-12 13:39:23,309 - INFO - Epoch 4690, Loss: 113.779968
+2025-09-12 13:39:24,697 - INFO - Epoch 4700, Loss: 139.334564
+2025-09-12 13:39:25,245 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_4700.pth
+2025-09-12 13:39:28,835 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_4700_classes_0-1.png
+2025-09-12 13:39:30,140 - INFO - Epoch 4710, Loss: 131.744934
+2025-09-12 13:39:31,525 - INFO - Epoch 4720, Loss: 140.409454
+2025-09-12 13:39:32,948 - INFO - Epoch 4730, Loss: 139.423492
+2025-09-12 13:39:34,418 - INFO - Epoch 4740, Loss: 129.998505
+2025-09-12 13:39:35,751 - INFO - Epoch 4750, Loss: 159.538696
+2025-09-12 13:39:36,321 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_4750.pth
+2025-09-12 13:39:39,922 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_4750_classes_0-1.png
+2025-09-12 13:39:41,351 - INFO - Epoch 4760, Loss: 121.831940
+2025-09-12 13:39:42,744 - INFO - Epoch 4770, Loss: 130.796783
+2025-09-12 13:39:44,190 - INFO - Epoch 4780, Loss: 123.266060
+2025-09-12 13:39:45,552 - INFO - Epoch 4790, Loss: 115.298470
+2025-09-12 13:39:47,014 - INFO - Epoch 4800, Loss: 163.543945
+2025-09-12 13:39:47,566 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_4800.pth
+2025-09-12 13:39:51,320 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_4800_classes_0-1.png
+2025-09-12 13:39:52,966 - INFO - Epoch 4810, Loss: 120.528519
+2025-09-12 13:39:54,289 - INFO - Epoch 4820, Loss: 140.569611
+2025-09-12 13:39:55,757 - INFO - Epoch 4830, Loss: 112.018898
+2025-09-12 13:39:57,170 - INFO - Epoch 4840, Loss: 130.902985
+2025-09-12 13:39:58,665 - INFO - Epoch 4850, Loss: 112.134369
+2025-09-12 13:39:59,232 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_4850.pth
+2025-09-12 13:40:02,820 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_4850_classes_0-1.png
+2025-09-12 13:40:04,476 - INFO - Epoch 4860, Loss: 128.850510
+2025-09-12 13:40:06,078 - INFO - Epoch 4870, Loss: 109.700439
+2025-09-12 13:40:07,663 - INFO - Epoch 4880, Loss: 112.772057
+2025-09-12 13:40:09,194 - INFO - Epoch 4890, Loss: 105.850105
+2025-09-12 13:40:10,824 - INFO - Epoch 4900, Loss: 146.604172
+2025-09-12 13:40:11,387 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_4900.pth
+2025-09-12 13:40:14,998 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_4900_classes_0-1.png
+2025-09-12 13:40:16,743 - INFO - Epoch 4910, Loss: 125.335106
+2025-09-12 13:40:18,431 - INFO - Epoch 4920, Loss: 127.703888
+2025-09-12 13:40:19,951 - INFO - Epoch 4930, Loss: 110.404755
+2025-09-12 13:40:21,420 - INFO - Epoch 4940, Loss: 121.883934
+2025-09-12 13:40:22,774 - INFO - Epoch 4950, Loss: 127.329849
+2025-09-12 13:40:23,330 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_4950.pth
+2025-09-12 13:40:26,913 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_4950_classes_0-1.png
+2025-09-12 13:40:28,133 - INFO - Epoch 4960, Loss: 115.318390
+2025-09-12 13:40:29,488 - INFO - Epoch 4970, Loss: 114.559067
+2025-09-12 13:40:30,788 - INFO - Epoch 4980, Loss: 107.759651
+2025-09-12 13:40:32,250 - INFO - Epoch 4990, Loss: 110.904984
+2025-09-12 13:40:33,635 - INFO - Epoch 5000, Loss: 134.922791
+2025-09-12 13:40:34,200 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_5000.pth
+2025-09-12 13:40:37,812 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_5000_classes_0-1.png
+2025-09-12 13:40:39,446 - INFO - Epoch 5010, Loss: 122.783752
+2025-09-12 13:40:41,145 - INFO - Epoch 5020, Loss: 125.267822
+2025-09-12 13:40:42,693 - INFO - Epoch 5030, Loss: 133.606750
+2025-09-12 13:40:44,061 - INFO - Epoch 5040, Loss: 117.510689
+2025-09-12 13:40:45,296 - INFO - Epoch 5050, Loss: 163.578491
+2025-09-12 13:40:45,851 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_5050.pth
+2025-09-12 13:40:49,427 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_5050_classes_0-1.png
+2025-09-12 13:40:50,949 - INFO - Epoch 5060, Loss: 123.379364
+2025-09-12 13:40:52,414 - INFO - Epoch 5070, Loss: 152.216583
+2025-09-12 13:40:53,844 - INFO - Epoch 5080, Loss: 104.565094
+2025-09-12 13:40:55,254 - INFO - Epoch 5090, Loss: 125.469017
+2025-09-12 13:40:56,812 - INFO - Epoch 5100, Loss: 118.854126
+2025-09-12 13:40:57,381 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_5100.pth
+2025-09-12 13:41:00,983 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_5100_classes_0-1.png
+2025-09-12 13:41:02,664 - INFO - Epoch 5110, Loss: 105.358963
+2025-09-12 13:41:04,125 - INFO - Epoch 5120, Loss: 121.686226
+2025-09-12 13:41:05,575 - INFO - Epoch 5130, Loss: 122.365349
+2025-09-12 13:41:06,887 - INFO - Epoch 5140, Loss: 125.778297
+2025-09-12 13:41:08,322 - INFO - Epoch 5150, Loss: 134.607086
+2025-09-12 13:41:08,888 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_5150.pth
+2025-09-12 13:41:12,476 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_5150_classes_0-1.png
+2025-09-12 13:41:13,865 - INFO - Epoch 5160, Loss: 114.306671
+2025-09-12 13:41:15,399 - INFO - Epoch 5170, Loss: 141.031693
+2025-09-12 13:41:16,743 - INFO - Epoch 5180, Loss: 132.586319
+2025-09-12 13:41:21,658 - INFO - New best model saved (loss: 90.557632)
+2025-09-12 13:41:22,821 - INFO - Epoch 5190, Loss: 103.528564
+2025-09-12 13:41:24,515 - INFO - Epoch 5200, Loss: 109.355019
+2025-09-12 13:41:25,070 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_5200.pth
+2025-09-12 13:41:28,697 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_5200_classes_0-1.png
+2025-09-12 13:41:30,421 - INFO - Epoch 5210, Loss: 130.762558
+2025-09-12 13:41:32,020 - INFO - Epoch 5220, Loss: 115.680756
+2025-09-12 13:41:33,538 - INFO - Epoch 5230, Loss: 122.621567
+2025-09-12 13:41:35,101 - INFO - Epoch 5240, Loss: 121.015366
+2025-09-12 13:41:36,532 - INFO - Epoch 5250, Loss: 114.642700
+2025-09-12 13:41:37,093 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_5250.pth
+2025-09-12 13:41:40,675 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_5250_classes_0-1.png
+2025-09-12 13:41:42,306 - INFO - Epoch 5260, Loss: 122.739891
+2025-09-12 13:41:43,850 - INFO - Epoch 5270, Loss: 122.443489
+2025-09-12 13:41:45,490 - INFO - Epoch 5280, Loss: 119.514923
+2025-09-12 13:41:46,864 - INFO - Epoch 5290, Loss: 117.769363
+2025-09-12 13:41:48,290 - INFO - Epoch 5300, Loss: 122.967934
+2025-09-12 13:41:48,856 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_5300.pth
+2025-09-12 13:41:52,463 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_5300_classes_0-1.png
+2025-09-12 13:41:54,072 - INFO - Epoch 5310, Loss: 121.302689
+2025-09-12 13:41:55,494 - INFO - Epoch 5320, Loss: 105.328926
+2025-09-12 13:41:56,924 - INFO - Epoch 5330, Loss: 111.994110
+2025-09-12 13:41:58,217 - INFO - Epoch 5340, Loss: 176.025009
+2025-09-12 13:41:59,679 - INFO - Epoch 5350, Loss: 118.996964
+2025-09-12 13:42:00,232 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_5350.pth
+2025-09-12 13:42:03,855 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_5350_classes_0-1.png
+2025-09-12 13:42:05,325 - INFO - Epoch 5360, Loss: 128.305603
+2025-09-12 13:42:06,733 - INFO - Epoch 5370, Loss: 128.220703
+2025-09-12 13:42:08,027 - INFO - Epoch 5380, Loss: 125.852707
+2025-09-12 13:42:09,697 - INFO - Epoch 5390, Loss: 114.203323
+2025-09-12 13:42:11,198 - INFO - Epoch 5400, Loss: 92.910614
+2025-09-12 13:42:11,752 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_5400.pth
+2025-09-12 13:42:15,369 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_5400_classes_0-1.png
+2025-09-12 13:42:17,136 - INFO - Epoch 5410, Loss: 139.098907
+2025-09-12 13:42:21,020 - INFO - New best model saved (loss: 83.710854)
+2025-09-12 13:42:22,332 - INFO - Epoch 5420, Loss: 111.420227
+2025-09-12 13:42:23,616 - INFO - Epoch 5430, Loss: 142.691086
+2025-09-12 13:42:25,037 - INFO - Epoch 5440, Loss: 129.970932
+2025-09-12 13:42:26,470 - INFO - Epoch 5450, Loss: 123.408691
+2025-09-12 13:42:27,032 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_5450.pth
+2025-09-12 13:42:30,620 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_5450_classes_0-1.png
+2025-09-12 13:42:31,947 - INFO - Epoch 5460, Loss: 123.726730
+2025-09-12 13:42:33,343 - INFO - Epoch 5470, Loss: 119.570099
+2025-09-12 13:42:34,716 - INFO - Epoch 5480, Loss: 124.041138
+2025-09-12 13:42:36,236 - INFO - Epoch 5490, Loss: 143.489044
+2025-09-12 13:42:37,481 - INFO - Epoch 5500, Loss: 136.269073
+2025-09-12 13:42:38,043 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_5500.pth
+2025-09-12 13:42:41,620 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_5500_classes_0-1.png
+2025-09-12 13:42:42,901 - INFO - Epoch 5510, Loss: 119.053711
+2025-09-12 13:42:44,181 - INFO - Epoch 5520, Loss: 136.098969
+2025-09-12 13:42:45,581 - INFO - Epoch 5530, Loss: 145.724060
+2025-09-12 13:42:47,151 - INFO - Epoch 5540, Loss: 143.689850
+2025-09-12 13:42:48,594 - INFO - Epoch 5550, Loss: 98.523140
+2025-09-12 13:42:49,143 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_5550.pth
+2025-09-12 13:42:52,754 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_5550_classes_0-1.png
+2025-09-12 13:42:54,468 - INFO - Epoch 5560, Loss: 104.056122
+2025-09-12 13:42:55,691 - INFO - Epoch 5570, Loss: 109.016449
+2025-09-12 13:42:56,989 - INFO - Epoch 5580, Loss: 120.029686
+2025-09-12 13:42:58,267 - INFO - Epoch 5590, Loss: 127.899643
+2025-09-12 13:42:59,707 - INFO - Epoch 5600, Loss: 132.565842
+2025-09-12 13:43:00,266 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_5600.pth
+2025-09-12 13:43:03,864 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_5600_classes_0-1.png
+2025-09-12 13:43:05,387 - INFO - Epoch 5610, Loss: 129.302887
+2025-09-12 13:43:06,717 - INFO - Epoch 5620, Loss: 114.737213
+2025-09-12 13:43:08,117 - INFO - Epoch 5630, Loss: 125.016464
+2025-09-12 13:43:09,659 - INFO - Epoch 5640, Loss: 106.218781
+2025-09-12 13:43:11,322 - INFO - Epoch 5650, Loss: 107.259796
+2025-09-12 13:43:11,883 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_5650.pth
+2025-09-12 13:43:15,490 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_5650_classes_0-1.png
+2025-09-12 13:43:16,817 - INFO - Epoch 5660, Loss: 118.591591
+2025-09-12 13:43:18,195 - INFO - Epoch 5670, Loss: 114.190819
+2025-09-12 13:43:19,504 - INFO - Epoch 5680, Loss: 113.149071
+2025-09-12 13:43:20,867 - INFO - Epoch 5690, Loss: 122.482101
+2025-09-12 13:43:22,090 - INFO - Epoch 5700, Loss: 116.299133
+2025-09-12 13:43:22,646 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_5700.pth
+2025-09-12 13:43:26,233 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_5700_classes_0-1.png
+2025-09-12 13:43:27,817 - INFO - Epoch 5710, Loss: 99.641663
+2025-09-12 13:43:29,344 - INFO - Epoch 5720, Loss: 116.654510
+2025-09-12 13:43:30,597 - INFO - Epoch 5730, Loss: 129.937134
+2025-09-12 13:43:32,212 - INFO - Epoch 5740, Loss: 124.699577
+2025-09-12 13:43:33,651 - INFO - Epoch 5750, Loss: 111.549599
+2025-09-12 13:43:34,211 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_5750.pth
+2025-09-12 13:43:37,824 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_5750_classes_0-1.png
+2025-09-12 13:43:39,429 - INFO - Epoch 5760, Loss: 102.292007
+2025-09-12 13:43:40,835 - INFO - Epoch 5770, Loss: 132.322632
+2025-09-12 13:43:42,328 - INFO - Epoch 5780, Loss: 131.469055
+2025-09-12 13:43:43,601 - INFO - Epoch 5790, Loss: 112.869827
+2025-09-12 13:43:44,906 - INFO - Epoch 5800, Loss: 153.360107
+2025-09-12 13:43:45,478 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_5800.pth
+2025-09-12 13:43:49,249 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_5800_classes_0-1.png
+2025-09-12 13:43:50,885 - INFO - Epoch 5810, Loss: 116.960266
+2025-09-12 13:43:52,497 - INFO - Epoch 5820, Loss: 124.789818
+2025-09-12 13:43:53,926 - INFO - Epoch 5830, Loss: 131.997391
+2025-09-12 13:43:55,325 - INFO - Epoch 5840, Loss: 138.929520
+2025-09-12 13:43:56,737 - INFO - Epoch 5850, Loss: 141.966064
+2025-09-12 13:43:57,291 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_5850.pth
+2025-09-12 13:44:00,874 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_5850_classes_0-1.png
+2025-09-12 13:44:02,478 - INFO - Epoch 5860, Loss: 131.713837
+2025-09-12 13:44:03,852 - INFO - Epoch 5870, Loss: 123.941704
+2025-09-12 13:44:05,161 - INFO - Epoch 5880, Loss: 129.374222
+2025-09-12 13:44:06,571 - INFO - Epoch 5890, Loss: 123.631485
+2025-09-12 13:44:07,874 - INFO - Epoch 5900, Loss: 123.160118
+2025-09-12 13:44:08,447 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_5900.pth
+2025-09-12 13:44:12,050 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_5900_classes_0-1.png
+2025-09-12 13:44:13,359 - INFO - Epoch 5910, Loss: 121.163467
+2025-09-12 13:44:14,765 - INFO - Epoch 5920, Loss: 101.153107
+2025-09-12 13:44:16,126 - INFO - Epoch 5930, Loss: 119.284409
+2025-09-12 13:44:17,666 - INFO - Epoch 5940, Loss: 124.703171
+2025-09-12 13:44:19,242 - INFO - Epoch 5950, Loss: 128.791641
+2025-09-12 13:44:19,811 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_5950.pth
+2025-09-12 13:44:23,444 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_5950_classes_0-1.png
+2025-09-12 13:44:24,880 - INFO - Epoch 5960, Loss: 129.086578
+2025-09-12 13:44:26,346 - INFO - Epoch 5970, Loss: 121.078468
+2025-09-12 13:44:27,716 - INFO - Epoch 5980, Loss: 151.724930
+2025-09-12 13:44:28,995 - INFO - Epoch 5990, Loss: 125.203262
+2025-09-12 13:44:30,569 - INFO - Epoch 6000, Loss: 130.996384
+2025-09-12 13:44:31,126 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_6000.pth
+2025-09-12 13:44:34,727 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_6000_classes_0-1.png
+2025-09-12 13:44:36,234 - INFO - Epoch 6010, Loss: 129.351654
+2025-09-12 13:44:37,658 - INFO - Epoch 6020, Loss: 107.867218
+2025-09-12 13:44:39,330 - INFO - Epoch 6030, Loss: 136.654419
+2025-09-12 13:44:40,778 - INFO - Epoch 6040, Loss: 115.714493
+2025-09-12 13:44:42,160 - INFO - Epoch 6050, Loss: 136.793152
+2025-09-12 13:44:42,727 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_6050.pth
+2025-09-12 13:44:46,316 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_6050_classes_0-1.png
+2025-09-12 13:44:47,642 - INFO - Epoch 6060, Loss: 106.562828
+2025-09-12 13:44:48,934 - INFO - Epoch 6070, Loss: 121.174690
+2025-09-12 13:44:50,454 - INFO - Epoch 6080, Loss: 109.185867
+2025-09-12 13:44:51,733 - INFO - Epoch 6090, Loss: 119.448624
+2025-09-12 13:44:53,187 - INFO - Epoch 6100, Loss: 104.895721
+2025-09-12 13:44:53,775 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_6100.pth
+2025-09-12 13:44:57,362 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_6100_classes_0-1.png
+2025-09-12 13:44:59,038 - INFO - Epoch 6110, Loss: 132.712540
+2025-09-12 13:45:00,568 - INFO - Epoch 6120, Loss: 111.209045
+2025-09-12 13:45:01,965 - INFO - Epoch 6130, Loss: 152.194077
+2025-09-12 13:45:03,622 - INFO - Epoch 6140, Loss: 138.998566
+2025-09-12 13:45:05,220 - INFO - Epoch 6150, Loss: 141.073273
+2025-09-12 13:45:05,781 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_6150.pth
+2025-09-12 13:45:09,380 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_6150_classes_0-1.png
+2025-09-12 13:45:10,765 - INFO - Epoch 6160, Loss: 116.534393
+2025-09-12 13:45:12,359 - INFO - Epoch 6170, Loss: 109.294922
+2025-09-12 13:45:13,906 - INFO - Epoch 6180, Loss: 127.915222
+2025-09-12 13:45:15,444 - INFO - Epoch 6190, Loss: 123.453903
+2025-09-12 13:45:16,772 - INFO - Epoch 6200, Loss: 128.793060
+2025-09-12 13:45:17,365 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_6200.pth
+2025-09-12 13:45:20,979 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_6200_classes_0-1.png
+2025-09-12 13:45:22,603 - INFO - Epoch 6210, Loss: 165.773788
+2025-09-12 13:45:24,227 - INFO - Epoch 6220, Loss: 94.483826
+2025-09-12 13:45:25,540 - INFO - Epoch 6230, Loss: 136.707397
+2025-09-12 13:45:26,890 - INFO - Epoch 6240, Loss: 136.861221
+2025-09-12 13:45:28,174 - INFO - Epoch 6250, Loss: 137.490417
+2025-09-12 13:45:28,891 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_6250.pth
+2025-09-12 13:45:32,498 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_6250_classes_0-1.png
+2025-09-12 13:45:34,154 - INFO - Epoch 6260, Loss: 136.910339
+2025-09-12 13:45:35,771 - INFO - Epoch 6270, Loss: 142.462219
+2025-09-12 13:45:37,186 - INFO - Epoch 6280, Loss: 123.070312
+2025-09-12 13:45:38,487 - INFO - Epoch 6290, Loss: 102.791985
+2025-09-12 13:45:39,767 - INFO - Epoch 6300, Loss: 88.301056
+2025-09-12 13:45:40,334 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_6300.pth
+2025-09-12 13:45:43,940 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_6300_classes_0-1.png
+2025-09-12 13:45:45,460 - INFO - Epoch 6310, Loss: 118.658745
+2025-09-12 13:45:46,955 - INFO - Epoch 6320, Loss: 116.710564
+2025-09-12 13:45:48,248 - INFO - Epoch 6330, Loss: 104.660881
+2025-09-12 13:45:49,745 - INFO - Epoch 6340, Loss: 120.547302
+2025-09-12 13:45:51,138 - INFO - Epoch 6350, Loss: 127.670837
+2025-09-12 13:45:51,701 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_6350.pth
+2025-09-12 13:45:55,324 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_6350_classes_0-1.png
+2025-09-12 13:45:56,954 - INFO - Epoch 6360, Loss: 123.040092
+2025-09-12 13:45:58,385 - INFO - Epoch 6370, Loss: 102.311081
+2025-09-12 13:45:59,724 - INFO - Epoch 6380, Loss: 102.362297
+2025-09-12 13:46:01,205 - INFO - Epoch 6390, Loss: 109.637367
+2025-09-12 13:46:02,431 - INFO - Epoch 6400, Loss: 122.061539
+2025-09-12 13:46:02,996 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_6400.pth
+2025-09-12 13:46:06,599 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_6400_classes_0-1.png
+2025-09-12 13:46:07,835 - INFO - Epoch 6410, Loss: 129.108749
+2025-09-12 13:46:09,162 - INFO - Epoch 6420, Loss: 143.355469
+2025-09-12 13:46:10,586 - INFO - Epoch 6430, Loss: 129.154449
+2025-09-12 13:46:12,164 - INFO - Epoch 6440, Loss: 121.819084
+2025-09-12 13:46:13,534 - INFO - Epoch 6450, Loss: 90.481392
+2025-09-12 13:46:14,248 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_6450.pth
+2025-09-12 13:46:17,840 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_6450_classes_0-1.png
+2025-09-12 13:46:19,229 - INFO - Epoch 6460, Loss: 110.341965
+2025-09-12 13:46:20,482 - INFO - Epoch 6470, Loss: 122.531761
+2025-09-12 13:46:21,945 - INFO - Epoch 6480, Loss: 135.672653
+2025-09-12 13:46:23,338 - INFO - Epoch 6490, Loss: 108.213058
+2025-09-12 13:46:25,033 - INFO - Epoch 6500, Loss: 131.697144
+2025-09-12 13:46:25,609 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_6500.pth
+2025-09-12 13:46:29,187 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_6500_classes_0-1.png
+2025-09-12 13:46:30,452 - INFO - Epoch 6510, Loss: 109.984711
+2025-09-12 13:46:31,714 - INFO - Epoch 6520, Loss: 117.077263
+2025-09-12 13:46:33,158 - INFO - Epoch 6530, Loss: 144.657913
+2025-09-12 13:46:34,439 - INFO - Epoch 6540, Loss: 112.502380
+2025-09-12 13:46:35,874 - INFO - Epoch 6550, Loss: 125.412872
+2025-09-12 13:46:36,448 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_6550.pth
+2025-09-12 13:46:40,075 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_6550_classes_0-1.png
+2025-09-12 13:46:41,414 - INFO - Epoch 6560, Loss: 114.146576
+2025-09-12 13:46:42,818 - INFO - Epoch 6570, Loss: 130.519974
+2025-09-12 13:46:44,168 - INFO - Epoch 6580, Loss: 109.391754
+2025-09-12 13:46:45,503 - INFO - Epoch 6590, Loss: 112.200790
+2025-09-12 13:46:46,926 - INFO - Epoch 6600, Loss: 108.879547
+2025-09-12 13:46:47,501 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_6600.pth
+2025-09-12 13:46:51,094 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_6600_classes_0-1.png
+2025-09-12 13:46:52,492 - INFO - Epoch 6610, Loss: 120.824738
+2025-09-12 13:46:53,971 - INFO - Epoch 6620, Loss: 127.607079
+2025-09-12 13:46:55,322 - INFO - Epoch 6630, Loss: 147.702179
+2025-09-12 13:46:56,769 - INFO - Epoch 6640, Loss: 116.309082
+2025-09-12 13:46:58,021 - INFO - Epoch 6650, Loss: 139.706451
+2025-09-12 13:46:58,590 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_6650.pth
+2025-09-12 13:47:02,183 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_6650_classes_0-1.png
+2025-09-12 13:47:03,689 - INFO - Epoch 6660, Loss: 107.577492
+2025-09-12 13:47:05,155 - INFO - Epoch 6670, Loss: 126.216103
+2025-09-12 13:47:06,566 - INFO - Epoch 6680, Loss: 115.069443
+2025-09-12 13:47:07,841 - INFO - Epoch 6690, Loss: 141.982361
+2025-09-12 13:47:09,259 - INFO - Epoch 6700, Loss: 104.566635
+2025-09-12 13:47:09,996 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_6700.pth
+2025-09-12 13:47:13,572 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_6700_classes_0-1.png
+2025-09-12 13:47:15,107 - INFO - Epoch 6710, Loss: 113.116272
+2025-09-12 13:47:16,665 - INFO - Epoch 6720, Loss: 140.040573
+2025-09-12 13:47:18,235 - INFO - Epoch 6730, Loss: 120.987778
+2025-09-12 13:47:19,801 - INFO - Epoch 6740, Loss: 118.649261
+2025-09-12 13:47:21,258 - INFO - Epoch 6750, Loss: 140.533691
+2025-09-12 13:47:21,817 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_6750.pth
+2025-09-12 13:47:25,413 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_6750_classes_0-1.png
+2025-09-12 13:47:27,038 - INFO - Epoch 6760, Loss: 152.765854
+2025-09-12 13:47:28,329 - INFO - Epoch 6770, Loss: 103.131218
+2025-09-12 13:47:29,635 - INFO - Epoch 6780, Loss: 129.529633
+2025-09-12 13:47:31,044 - INFO - Epoch 6790, Loss: 105.172440
+2025-09-12 13:47:32,462 - INFO - Epoch 6800, Loss: 106.217529
+2025-09-12 13:47:33,039 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_6800.pth
+2025-09-12 13:47:36,647 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_6800_classes_0-1.png
+2025-09-12 13:47:38,020 - INFO - Epoch 6810, Loss: 115.253609
+2025-09-12 13:47:39,374 - INFO - Epoch 6820, Loss: 143.154678
+2025-09-12 13:47:40,712 - INFO - Epoch 6830, Loss: 101.756256
+2025-09-12 13:47:42,101 - INFO - Epoch 6840, Loss: 115.542297
+2025-09-12 13:47:43,357 - INFO - Epoch 6850, Loss: 121.213562
+2025-09-12 13:47:43,926 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_6850.pth
+2025-09-12 13:47:47,536 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_6850_classes_0-1.png
+2025-09-12 13:47:48,918 - INFO - Epoch 6860, Loss: 91.288139
+2025-09-12 13:47:50,275 - INFO - Epoch 6870, Loss: 111.714821
+2025-09-12 13:47:51,606 - INFO - Epoch 6880, Loss: 140.529785
+2025-09-12 13:47:53,260 - INFO - Epoch 6890, Loss: 126.551620
+2025-09-12 13:47:54,837 - INFO - Epoch 6900, Loss: 105.513138
+2025-09-12 13:47:55,414 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_6900.pth
+2025-09-12 13:47:59,005 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_6900_classes_0-1.png
+2025-09-12 13:48:00,550 - INFO - Epoch 6910, Loss: 114.552544
+2025-09-12 13:48:02,087 - INFO - Epoch 6920, Loss: 126.173477
+2025-09-12 13:48:03,761 - INFO - Epoch 6930, Loss: 118.075897
+2025-09-12 13:48:05,050 - INFO - Epoch 6940, Loss: 114.628029
+2025-09-12 13:48:06,358 - INFO - Epoch 6950, Loss: 124.866043
+2025-09-12 13:48:06,936 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_6950.pth
+2025-09-12 13:48:10,534 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_6950_classes_0-1.png
+2025-09-12 13:48:12,141 - INFO - Epoch 6960, Loss: 109.598167
+2025-09-12 13:48:13,557 - INFO - Epoch 6970, Loss: 108.509529
+2025-09-12 13:48:15,083 - INFO - Epoch 6980, Loss: 117.217842
+2025-09-12 13:48:16,540 - INFO - Epoch 6990, Loss: 106.176865
+2025-09-12 13:48:18,022 - INFO - Epoch 7000, Loss: 142.529724
+2025-09-12 13:48:18,593 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_7000.pth
+2025-09-12 13:48:22,196 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_7000_classes_0-1.png
+2025-09-12 13:48:23,621 - INFO - Epoch 7010, Loss: 116.200119
+2025-09-12 13:48:24,991 - INFO - Epoch 7020, Loss: 146.323944
+2025-09-12 13:48:26,266 - INFO - Epoch 7030, Loss: 117.491096
+2025-09-12 13:48:27,635 - INFO - Epoch 7040, Loss: 110.976402
+2025-09-12 13:48:29,094 - INFO - Epoch 7050, Loss: 131.217987
+2025-09-12 13:48:29,666 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_7050.pth
+2025-09-12 13:48:33,250 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_7050_classes_0-1.png
+2025-09-12 13:48:37,509 - INFO - New best model saved (loss: 83.057266)
+2025-09-12 13:48:38,024 - INFO - Epoch 7060, Loss: 121.732750
+2025-09-12 13:48:39,473 - INFO - Epoch 7070, Loss: 111.478897
+2025-09-12 13:48:40,829 - INFO - Epoch 7080, Loss: 138.179474
+2025-09-12 13:48:42,125 - INFO - Epoch 7090, Loss: 101.130493
+2025-09-12 13:48:43,793 - INFO - Epoch 7100, Loss: 117.734756
+2025-09-12 13:48:44,362 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_7100.pth
+2025-09-12 13:48:48,119 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_7100_classes_0-1.png
+2025-09-12 13:48:49,426 - INFO - Epoch 7110, Loss: 119.566872
+2025-09-12 13:48:50,750 - INFO - Epoch 7120, Loss: 115.001144
+2025-09-12 13:48:52,070 - INFO - Epoch 7130, Loss: 111.988068
+2025-09-12 13:48:53,433 - INFO - Epoch 7140, Loss: 99.886177
+2025-09-12 13:48:54,824 - INFO - Epoch 7150, Loss: 116.486748
+2025-09-12 13:48:55,403 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_7150.pth
+2025-09-12 13:48:59,048 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_7150_classes_0-1.png
+2025-09-12 13:49:00,745 - INFO - Epoch 7160, Loss: 102.870712
+2025-09-12 13:49:02,371 - INFO - Epoch 7170, Loss: 141.036133
+2025-09-12 13:49:03,755 - INFO - Epoch 7180, Loss: 117.561081
+2025-09-12 13:49:05,225 - INFO - Epoch 7190, Loss: 119.235718
+2025-09-12 13:49:06,568 - INFO - Epoch 7200, Loss: 125.000526
+2025-09-12 13:49:07,133 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_7200.pth
+2025-09-12 13:49:10,720 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_7200_classes_0-1.png
+2025-09-12 13:49:12,368 - INFO - Epoch 7210, Loss: 106.299164
+2025-09-12 13:49:13,627 - INFO - Epoch 7220, Loss: 115.831329
+2025-09-12 13:49:15,245 - INFO - Epoch 7230, Loss: 108.194786
+2025-09-12 13:49:16,809 - INFO - Epoch 7240, Loss: 106.886375
+2025-09-12 13:49:18,476 - INFO - Epoch 7250, Loss: 126.629768
+2025-09-12 13:49:19,035 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_7250.pth
+2025-09-12 13:49:22,637 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_7250_classes_0-1.png
+2025-09-12 13:49:24,076 - INFO - Epoch 7260, Loss: 120.504570
+2025-09-12 13:49:25,721 - INFO - Epoch 7270, Loss: 113.678810
+2025-09-12 13:49:27,103 - INFO - Epoch 7280, Loss: 124.874298
+2025-09-12 13:49:28,631 - INFO - Epoch 7290, Loss: 123.922485
+2025-09-12 13:49:30,105 - INFO - Epoch 7300, Loss: 117.323578
+2025-09-12 13:49:30,677 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_7300.pth
+2025-09-12 13:49:34,412 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_7300_classes_0-1.png
+2025-09-12 13:49:35,817 - INFO - Epoch 7310, Loss: 122.213676
+2025-09-12 13:49:37,221 - INFO - Epoch 7320, Loss: 115.526779
+2025-09-12 13:49:38,530 - INFO - Epoch 7330, Loss: 109.907463
+2025-09-12 13:49:40,065 - INFO - Epoch 7340, Loss: 115.025017
+2025-09-12 13:49:41,334 - INFO - Epoch 7350, Loss: 131.964569
+2025-09-12 13:49:41,901 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_7350.pth
+2025-09-12 13:49:45,501 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_7350_classes_0-1.png
+2025-09-12 13:49:47,149 - INFO - Epoch 7360, Loss: 118.027573
+2025-09-12 13:49:48,525 - INFO - Epoch 7370, Loss: 124.905151
+2025-09-12 13:49:49,914 - INFO - Epoch 7380, Loss: 117.143463
+2025-09-12 13:49:51,387 - INFO - Epoch 7390, Loss: 119.113228
+2025-09-12 13:49:52,835 - INFO - Epoch 7400, Loss: 92.805618
+2025-09-12 13:49:53,399 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_7400.pth
+2025-09-12 13:49:56,999 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_7400_classes_0-1.png
+2025-09-12 13:49:58,421 - INFO - Epoch 7410, Loss: 140.246765
+2025-09-12 13:49:59,761 - INFO - Epoch 7420, Loss: 124.175346
+2025-09-12 13:50:01,257 - INFO - Epoch 7430, Loss: 100.245575
+2025-09-12 13:50:02,855 - INFO - Epoch 7440, Loss: 115.032990
+2025-09-12 13:50:04,277 - INFO - Epoch 7450, Loss: 113.600342
+2025-09-12 13:50:04,852 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_7450.pth
+2025-09-12 13:50:08,450 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_7450_classes_0-1.png
+2025-09-12 13:50:09,813 - INFO - Epoch 7460, Loss: 114.798065
+2025-09-12 13:50:11,427 - INFO - Epoch 7470, Loss: 123.564789
+2025-09-12 13:50:12,777 - INFO - Epoch 7480, Loss: 110.407516
+2025-09-12 13:50:14,039 - INFO - Epoch 7490, Loss: 122.744942
+2025-09-12 13:50:15,715 - INFO - Epoch 7500, Loss: 112.510895
+2025-09-12 13:50:16,276 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_7500.pth
+2025-09-12 13:50:19,889 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_7500_classes_0-1.png
+2025-09-12 13:50:21,349 - INFO - Epoch 7510, Loss: 123.255646
+2025-09-12 13:50:22,913 - INFO - Epoch 7520, Loss: 133.894135
+2025-09-12 13:50:24,258 - INFO - Epoch 7530, Loss: 110.953506
+2025-09-12 13:50:25,712 - INFO - Epoch 7540, Loss: 112.006882
+2025-09-12 13:50:27,250 - INFO - Epoch 7550, Loss: 114.007088
+2025-09-12 13:50:27,812 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_7550.pth
+2025-09-12 13:50:31,405 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_7550_classes_0-1.png
+2025-09-12 13:50:32,794 - INFO - Epoch 7560, Loss: 108.676628
+2025-09-12 13:50:34,361 - INFO - Epoch 7570, Loss: 101.874466
+2025-09-12 13:50:35,608 - INFO - Epoch 7580, Loss: 101.006363
+2025-09-12 13:50:37,109 - INFO - Epoch 7590, Loss: 138.526276
+2025-09-12 13:50:38,532 - INFO - Epoch 7600, Loss: 117.411522
+2025-09-12 13:50:39,094 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_7600.pth
+2025-09-12 13:50:42,686 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_7600_classes_0-1.png
+2025-09-12 13:50:44,181 - INFO - Epoch 7610, Loss: 133.655762
+2025-09-12 13:50:45,831 - INFO - Epoch 7620, Loss: 103.693863
+2025-09-12 13:50:47,433 - INFO - Epoch 7630, Loss: 128.562836
+2025-09-12 13:50:49,100 - INFO - Epoch 7640, Loss: 118.362000
+2025-09-12 13:50:50,466 - INFO - Epoch 7650, Loss: 120.724739
+2025-09-12 13:50:51,020 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_7650.pth
+2025-09-12 13:50:54,617 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_7650_classes_0-1.png
+2025-09-12 13:50:56,123 - INFO - Epoch 7660, Loss: 145.833099
+2025-09-12 13:50:57,450 - INFO - Epoch 7670, Loss: 141.640030
+2025-09-12 13:50:58,760 - INFO - Epoch 7680, Loss: 101.620598
+2025-09-12 13:51:00,157 - INFO - Epoch 7690, Loss: 110.002815
+2025-09-12 13:51:01,570 - INFO - Epoch 7700, Loss: 143.947998
+2025-09-12 13:51:02,125 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_7700.pth
+2025-09-12 13:51:05,882 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_7700_classes_0-1.png
+2025-09-12 13:51:07,198 - INFO - Epoch 7710, Loss: 115.454300
+2025-09-12 13:51:08,737 - INFO - Epoch 7720, Loss: 111.356018
+2025-09-12 13:51:10,150 - INFO - Epoch 7730, Loss: 116.625725
+2025-09-12 13:51:11,486 - INFO - Epoch 7740, Loss: 116.030106
+2025-09-12 13:51:12,849 - INFO - Epoch 7750, Loss: 108.471741
+2025-09-12 13:51:13,409 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_7750.pth
+2025-09-12 13:51:17,010 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_7750_classes_0-1.png
+2025-09-12 13:51:18,384 - INFO - Epoch 7760, Loss: 111.749367
+2025-09-12 13:51:19,715 - INFO - Epoch 7770, Loss: 113.323883
+2025-09-12 13:51:21,053 - INFO - Epoch 7780, Loss: 95.316521
+2025-09-12 13:51:22,577 - INFO - Epoch 7790, Loss: 118.901772
+2025-09-12 13:51:23,818 - INFO - Epoch 7800, Loss: 126.012024
+2025-09-12 13:51:24,373 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_7800.pth
+2025-09-12 13:51:27,985 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_7800_classes_0-1.png
+2025-09-12 13:51:29,544 - INFO - Epoch 7810, Loss: 110.393814
+2025-09-12 13:51:31,063 - INFO - Epoch 7820, Loss: 110.749054
+2025-09-12 13:51:32,392 - INFO - Epoch 7830, Loss: 95.707291
+2025-09-12 13:51:33,865 - INFO - Epoch 7840, Loss: 118.654472
+2025-09-12 13:51:35,385 - INFO - Epoch 7850, Loss: 138.696243
+2025-09-12 13:51:35,966 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_7850.pth
+2025-09-12 13:51:39,573 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_7850_classes_0-1.png
+2025-09-12 13:51:41,163 - INFO - Epoch 7860, Loss: 127.219757
+2025-09-12 13:51:42,606 - INFO - Epoch 7870, Loss: 107.906693
+2025-09-12 13:51:44,170 - INFO - Epoch 7880, Loss: 101.620094
+2025-09-12 13:51:45,641 - INFO - Epoch 7890, Loss: 102.156235
+2025-09-12 13:51:47,138 - INFO - Epoch 7900, Loss: 125.035400
+2025-09-12 13:51:47,716 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_7900.pth
+2025-09-12 13:51:51,319 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_7900_classes_0-1.png
+2025-09-12 13:51:52,874 - INFO - Epoch 7910, Loss: 145.023682
+2025-09-12 13:51:54,527 - INFO - Epoch 7920, Loss: 112.521294
+2025-09-12 13:51:56,080 - INFO - Epoch 7930, Loss: 122.937592
+2025-09-12 13:51:57,348 - INFO - Epoch 7940, Loss: 107.258209
+2025-09-12 13:51:58,685 - INFO - Epoch 7950, Loss: 124.169334
+2025-09-12 13:51:59,238 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_7950.pth
+2025-09-12 13:52:02,819 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_7950_classes_0-1.png
+2025-09-12 13:52:04,205 - INFO - Epoch 7960, Loss: 122.807770
+2025-09-12 13:52:05,725 - INFO - Epoch 7970, Loss: 132.384689
+2025-09-12 13:52:07,146 - INFO - Epoch 7980, Loss: 106.705612
+2025-09-12 13:52:08,402 - INFO - Epoch 7990, Loss: 118.540207
+2025-09-12 13:52:09,733 - INFO - Epoch 8000, Loss: 101.270508
+2025-09-12 13:52:10,292 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_8000.pth
+2025-09-12 13:52:13,884 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_8000_classes_0-1.png
+2025-09-12 13:52:15,306 - INFO - Epoch 8010, Loss: 140.641602
+2025-09-12 13:52:16,770 - INFO - Epoch 8020, Loss: 130.532547
+2025-09-12 13:52:18,127 - INFO - Epoch 8030, Loss: 115.435730
+2025-09-12 13:52:19,496 - INFO - Epoch 8040, Loss: 99.667160
+2025-09-12 13:52:20,932 - INFO - Epoch 8050, Loss: 124.610504
+2025-09-12 13:52:21,508 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_8050.pth
+2025-09-12 13:52:25,100 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_8050_classes_0-1.png
+2025-09-12 13:52:26,536 - INFO - Epoch 8060, Loss: 133.087250
+2025-09-12 13:52:27,819 - INFO - Epoch 8070, Loss: 112.392265
+2025-09-12 13:52:29,129 - INFO - Epoch 8080, Loss: 140.025391
+2025-09-12 13:52:30,564 - INFO - Epoch 8090, Loss: 101.395348
+2025-09-12 13:52:32,189 - INFO - Epoch 8100, Loss: 142.114883
+2025-09-12 13:52:32,763 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_8100.pth
+2025-09-12 13:52:36,359 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_8100_classes_0-1.png
+2025-09-12 13:52:37,973 - INFO - Epoch 8110, Loss: 118.689201
+2025-09-12 13:52:39,606 - INFO - Epoch 8120, Loss: 107.381371
+2025-09-12 13:52:41,089 - INFO - Epoch 8130, Loss: 116.410797
+2025-09-12 13:52:42,383 - INFO - Epoch 8140, Loss: 118.331665
+2025-09-12 13:52:43,750 - INFO - Epoch 8150, Loss: 125.523285
+2025-09-12 13:52:44,483 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_8150.pth
+2025-09-12 13:52:48,081 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_8150_classes_0-1.png
+2025-09-12 13:52:49,433 - INFO - Epoch 8160, Loss: 112.093941
+2025-09-12 13:52:50,694 - INFO - Epoch 8170, Loss: 121.950172
+2025-09-12 13:52:52,157 - INFO - Epoch 8180, Loss: 134.147247
+2025-09-12 13:52:53,455 - INFO - Epoch 8190, Loss: 112.744255
+2025-09-12 13:52:54,907 - INFO - Epoch 8200, Loss: 129.582489
+2025-09-12 13:52:55,472 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_8200.pth
+2025-09-12 13:52:59,065 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_8200_classes_0-1.png
+2025-09-12 13:53:00,419 - INFO - Epoch 8210, Loss: 114.537537
+2025-09-12 13:53:01,791 - INFO - Epoch 8220, Loss: 117.037170
+2025-09-12 13:53:03,082 - INFO - Epoch 8230, Loss: 110.443375
+2025-09-12 13:53:04,354 - INFO - Epoch 8240, Loss: 115.093323
+2025-09-12 13:53:05,715 - INFO - Epoch 8250, Loss: 104.023010
+2025-09-12 13:53:06,290 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_8250.pth
+2025-09-12 13:53:09,910 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_8250_classes_0-1.png
+2025-09-12 13:53:11,273 - INFO - Epoch 8260, Loss: 128.211060
+2025-09-12 13:53:12,702 - INFO - Epoch 8270, Loss: 138.455887
+2025-09-12 13:53:14,028 - INFO - Epoch 8280, Loss: 112.157272
+2025-09-12 13:53:15,466 - INFO - Epoch 8290, Loss: 110.470314
+2025-09-12 13:53:16,856 - INFO - Epoch 8300, Loss: 134.369080
+2025-09-12 13:53:17,440 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_8300.pth
+2025-09-12 13:53:21,027 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_8300_classes_0-1.png
+2025-09-12 13:53:22,214 - INFO - Epoch 8310, Loss: 87.676582
+2025-09-12 13:53:23,587 - INFO - Epoch 8320, Loss: 138.622253
+2025-09-12 13:53:25,055 - INFO - Epoch 8330, Loss: 115.587097
+2025-09-12 13:53:26,406 - INFO - Epoch 8340, Loss: 112.724396
+2025-09-12 13:53:27,688 - INFO - Epoch 8350, Loss: 112.023277
+2025-09-12 13:53:28,251 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_8350.pth
+2025-09-12 13:53:31,864 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_8350_classes_0-1.png
+2025-09-12 13:53:33,207 - INFO - Epoch 8360, Loss: 128.067017
+2025-09-12 13:53:34,881 - INFO - Epoch 8370, Loss: 121.199387
+2025-09-12 13:53:36,377 - INFO - Epoch 8380, Loss: 115.251221
+2025-09-12 13:53:37,692 - INFO - Epoch 8390, Loss: 115.647697
+2025-09-12 13:53:39,246 - INFO - Epoch 8400, Loss: 123.550156
+2025-09-12 13:53:39,807 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_8400.pth
+2025-09-12 13:53:43,381 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_8400_classes_0-1.png
+2025-09-12 13:53:44,627 - INFO - Epoch 8410, Loss: 101.252617
+2025-09-12 13:53:45,901 - INFO - Epoch 8420, Loss: 112.668053
+2025-09-12 13:53:47,403 - INFO - Epoch 8430, Loss: 120.361176
+2025-09-12 13:53:48,729 - INFO - Epoch 8440, Loss: 105.723770
+2025-09-12 13:53:50,038 - INFO - Epoch 8450, Loss: 154.836395
+2025-09-12 13:53:50,601 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_8450.pth
+2025-09-12 13:53:54,179 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_8450_classes_0-1.png
+2025-09-12 13:53:55,620 - INFO - Epoch 8460, Loss: 103.058434
+2025-09-12 13:53:57,166 - INFO - Epoch 8470, Loss: 103.175507
+2025-09-12 13:53:58,641 - INFO - Epoch 8480, Loss: 143.043884
+2025-09-12 13:54:00,022 - INFO - Epoch 8490, Loss: 119.235260
+2025-09-12 13:54:01,314 - INFO - Epoch 8500, Loss: 128.956604
+2025-09-12 13:54:01,879 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_8500.pth
+2025-09-12 13:54:05,483 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_8500_classes_0-1.png
+2025-09-12 13:54:07,014 - INFO - Epoch 8510, Loss: 111.992752
+2025-09-12 13:54:08,437 - INFO - Epoch 8520, Loss: 112.379799
+2025-09-12 13:54:10,198 - INFO - Epoch 8530, Loss: 123.811203
+2025-09-12 13:54:11,817 - INFO - Epoch 8540, Loss: 115.845398
+2025-09-12 13:54:13,311 - INFO - Epoch 8550, Loss: 127.983376
+2025-09-12 13:54:13,887 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_8550.pth
+2025-09-12 13:54:17,632 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_8550_classes_0-1.png
+2025-09-12 13:54:18,985 - INFO - Epoch 8560, Loss: 128.214172
+2025-09-12 13:54:20,326 - INFO - Epoch 8570, Loss: 126.688293
+2025-09-12 13:54:21,803 - INFO - Epoch 8580, Loss: 103.462051
+2025-09-12 13:54:23,187 - INFO - Epoch 8590, Loss: 132.492218
+2025-09-12 13:54:24,499 - INFO - Epoch 8600, Loss: 140.932068
+2025-09-12 13:54:25,060 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_8600.pth
+2025-09-12 13:54:28,671 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_8600_classes_0-1.png
+2025-09-12 13:54:30,091 - INFO - Epoch 8610, Loss: 103.717422
+2025-09-12 13:54:31,470 - INFO - Epoch 8620, Loss: 134.246765
+2025-09-12 13:54:33,061 - INFO - Epoch 8630, Loss: 147.297577
+2025-09-12 13:54:34,306 - INFO - Epoch 8640, Loss: 124.725723
+2025-09-12 13:54:35,695 - INFO - Epoch 8650, Loss: 108.154114
+2025-09-12 13:54:36,263 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_8650.pth
+2025-09-12 13:54:39,879 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_8650_classes_0-1.png
+2025-09-12 13:54:41,562 - INFO - Epoch 8660, Loss: 95.049011
+2025-09-12 13:54:42,963 - INFO - Epoch 8670, Loss: 130.536423
+2025-09-12 13:54:44,374 - INFO - Epoch 8680, Loss: 111.772919
+2025-09-12 13:54:46,039 - INFO - Epoch 8690, Loss: 101.289627
+2025-09-12 13:54:47,556 - INFO - Epoch 8700, Loss: 103.505768
+2025-09-12 13:54:48,115 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_8700.pth
+2025-09-12 13:54:51,715 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_8700_classes_0-1.png
+2025-09-12 13:54:52,917 - INFO - Epoch 8710, Loss: 119.827599
+2025-09-12 13:54:54,242 - INFO - Epoch 8720, Loss: 108.940765
+2025-09-12 13:54:55,609 - INFO - Epoch 8730, Loss: 114.437721
+2025-09-12 13:54:57,152 - INFO - Epoch 8740, Loss: 98.151947
+2025-09-12 13:54:58,543 - INFO - Epoch 8750, Loss: 126.410309
+2025-09-12 13:54:59,110 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_8750.pth
+2025-09-12 13:55:02,881 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_8750_classes_0-1.png
+2025-09-12 13:55:04,477 - INFO - Epoch 8760, Loss: 94.878326
+2025-09-12 13:55:05,741 - INFO - Epoch 8770, Loss: 129.412933
+2025-09-12 13:55:07,119 - INFO - Epoch 8780, Loss: 92.901955
+2025-09-12 13:55:08,569 - INFO - Epoch 8790, Loss: 109.909454
+2025-09-12 13:55:10,184 - INFO - Epoch 8800, Loss: 132.188980
+2025-09-12 13:55:10,739 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_8800.pth
+2025-09-12 13:55:14,315 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_8800_classes_0-1.png
+2025-09-12 13:55:15,917 - INFO - Epoch 8810, Loss: 111.245224
+2025-09-12 13:55:17,477 - INFO - Epoch 8820, Loss: 132.236954
+2025-09-12 13:55:18,915 - INFO - Epoch 8830, Loss: 118.652458
+2025-09-12 13:55:20,287 - INFO - Epoch 8840, Loss: 108.485184
+2025-09-12 13:55:21,800 - INFO - Epoch 8850, Loss: 107.094460
+2025-09-12 13:55:22,367 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_8850.pth
+2025-09-12 13:55:25,956 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_8850_classes_0-1.png
+2025-09-12 13:55:27,422 - INFO - Epoch 8860, Loss: 110.271301
+2025-09-12 13:55:28,940 - INFO - Epoch 8870, Loss: 115.658295
+2025-09-12 13:55:30,350 - INFO - Epoch 8880, Loss: 109.312225
+2025-09-12 13:55:31,849 - INFO - Epoch 8890, Loss: 118.017952
+2025-09-12 13:55:33,246 - INFO - Epoch 8900, Loss: 120.707748
+2025-09-12 13:55:33,818 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_8900.pth
+2025-09-12 13:55:37,426 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_8900_classes_0-1.png
+2025-09-12 13:55:38,905 - INFO - Epoch 8910, Loss: 117.091522
+2025-09-12 13:55:40,149 - INFO - Epoch 8920, Loss: 121.667290
+2025-09-12 13:55:41,454 - INFO - Epoch 8930, Loss: 111.988815
+2025-09-12 13:55:42,880 - INFO - Epoch 8940, Loss: 125.916275
+2025-09-12 13:55:44,349 - INFO - Epoch 8950, Loss: 119.627136
+2025-09-12 13:55:44,917 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_8950.pth
+2025-09-12 13:55:48,522 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_8950_classes_0-1.png
+2025-09-12 13:55:50,184 - INFO - Epoch 8960, Loss: 115.881111
+2025-09-12 13:55:51,750 - INFO - Epoch 8970, Loss: 139.546875
+2025-09-12 13:55:53,134 - INFO - Epoch 8980, Loss: 122.110329
+2025-09-12 13:55:54,593 - INFO - Epoch 8990, Loss: 96.643761
+2025-09-12 13:55:55,855 - INFO - Epoch 9000, Loss: 118.114052
+2025-09-12 13:55:56,419 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_9000.pth
+2025-09-12 13:56:00,017 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_9000_classes_0-1.png
+2025-09-12 13:56:01,723 - INFO - Epoch 9010, Loss: 115.319267
+2025-09-12 13:56:03,128 - INFO - Epoch 9020, Loss: 144.157578
+2025-09-12 13:56:04,425 - INFO - Epoch 9030, Loss: 110.934082
+2025-09-12 13:56:05,782 - INFO - Epoch 9040, Loss: 100.429810
+2025-09-12 13:56:06,995 - INFO - Epoch 9050, Loss: 116.924362
+2025-09-12 13:56:07,628 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_9050.pth
+2025-09-12 13:56:11,222 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_9050_classes_0-1.png
+2025-09-12 13:56:12,576 - INFO - Epoch 9060, Loss: 160.060379
+2025-09-12 13:56:13,811 - INFO - Epoch 9070, Loss: 114.165070
+2025-09-12 13:56:15,441 - INFO - Epoch 9080, Loss: 132.505310
+2025-09-12 13:56:16,893 - INFO - Epoch 9090, Loss: 86.001350
+2025-09-12 13:56:18,158 - INFO - Epoch 9100, Loss: 112.393745
+2025-09-12 13:56:18,715 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_9100.pth
+2025-09-12 13:56:22,313 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_9100_classes_0-1.png
+2025-09-12 13:56:23,782 - INFO - Epoch 9110, Loss: 95.698029
+2025-09-12 13:56:25,227 - INFO - Epoch 9120, Loss: 98.027458
+2025-09-12 13:56:26,647 - INFO - Epoch 9130, Loss: 106.943542
+2025-09-12 13:56:28,025 - INFO - Epoch 9140, Loss: 111.368378
+2025-09-12 13:56:29,431 - INFO - Epoch 9150, Loss: 150.568283
+2025-09-12 13:56:30,011 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_9150.pth
+2025-09-12 13:56:33,612 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_9150_classes_0-1.png
+2025-09-12 13:56:35,010 - INFO - Epoch 9160, Loss: 114.123886
+2025-09-12 13:56:36,401 - INFO - Epoch 9170, Loss: 98.637207
+2025-09-12 13:56:37,711 - INFO - Epoch 9180, Loss: 101.164764
+2025-09-12 13:56:39,130 - INFO - Epoch 9190, Loss: 112.811768
+2025-09-12 13:56:40,634 - INFO - Epoch 9200, Loss: 125.249161
+2025-09-12 13:56:41,345 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_9200.pth
+2025-09-12 13:56:44,946 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_9200_classes_0-1.png
+2025-09-12 13:56:46,579 - INFO - Epoch 9210, Loss: 126.003418
+2025-09-12 13:56:48,358 - INFO - Epoch 9220, Loss: 117.673683
+2025-09-12 13:56:49,955 - INFO - Epoch 9230, Loss: 117.489426
+2025-09-12 13:56:51,430 - INFO - Epoch 9240, Loss: 102.673798
+2025-09-12 13:56:52,686 - INFO - Epoch 9250, Loss: 101.383606
+2025-09-12 13:56:53,257 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_9250.pth
+2025-09-12 13:56:56,841 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_9250_classes_0-1.png
+2025-09-12 13:56:58,169 - INFO - Epoch 9260, Loss: 97.375122
+2025-09-12 13:56:59,568 - INFO - Epoch 9270, Loss: 118.084900
+2025-09-12 13:57:00,942 - INFO - Epoch 9280, Loss: 107.441040
+2025-09-12 13:57:02,263 - INFO - Epoch 9290, Loss: 110.435539
+2025-09-12 13:57:03,535 - INFO - Epoch 9300, Loss: 118.012665
+2025-09-12 13:57:04,113 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_9300.pth
+2025-09-12 13:57:07,716 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_9300_classes_0-1.png
+2025-09-12 13:57:09,091 - INFO - Epoch 9310, Loss: 129.819077
+2025-09-12 13:57:10,464 - INFO - Epoch 9320, Loss: 109.197754
+2025-09-12 13:57:11,806 - INFO - Epoch 9330, Loss: 110.705093
+2025-09-12 13:57:13,159 - INFO - Epoch 9340, Loss: 106.632126
+2025-09-12 13:57:14,481 - INFO - Epoch 9350, Loss: 106.497910
+2025-09-12 13:57:15,047 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_9350.pth
+2025-09-12 13:57:18,662 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_9350_classes_0-1.png
+2025-09-12 13:57:20,266 - INFO - Epoch 9360, Loss: 109.580841
+2025-09-12 13:57:21,785 - INFO - Epoch 9370, Loss: 118.400963
+2025-09-12 13:57:23,149 - INFO - Epoch 9380, Loss: 103.683945
+2025-09-12 13:57:24,481 - INFO - Epoch 9390, Loss: 103.306366
+2025-09-12 13:57:25,927 - INFO - Epoch 9400, Loss: 110.384735
+2025-09-12 13:57:26,502 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_9400.pth
+2025-09-12 13:57:30,117 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_9400_classes_0-1.png
+2025-09-12 13:57:31,473 - INFO - Epoch 9410, Loss: 130.185913
+2025-09-12 13:57:32,803 - INFO - Epoch 9420, Loss: 114.790024
+2025-09-12 13:57:34,406 - INFO - Epoch 9430, Loss: 110.636719
+2025-09-12 13:57:35,722 - INFO - Epoch 9440, Loss: 98.269875
+2025-09-12 13:57:37,026 - INFO - Epoch 9450, Loss: 102.712059
+2025-09-12 13:57:37,595 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_9450.pth
+2025-09-12 13:57:41,186 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_9450_classes_0-1.png
+2025-09-12 13:57:42,606 - INFO - Epoch 9460, Loss: 142.063019
+2025-09-12 13:57:43,993 - INFO - Epoch 9470, Loss: 118.099144
+2025-09-12 13:57:45,480 - INFO - Epoch 9480, Loss: 112.912331
+2025-09-12 13:57:46,779 - INFO - Epoch 9490, Loss: 103.043213
+2025-09-12 13:57:48,114 - INFO - Epoch 9500, Loss: 130.744171
+2025-09-12 13:57:48,686 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_9500.pth
+2025-09-12 13:57:52,296 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_9500_classes_0-1.png
+2025-09-12 13:57:53,843 - INFO - Epoch 9510, Loss: 98.317184
+2025-09-12 13:57:55,291 - INFO - Epoch 9520, Loss: 141.947479
+2025-09-12 13:57:56,816 - INFO - Epoch 9530, Loss: 117.685158
+2025-09-12 13:57:58,389 - INFO - Epoch 9540, Loss: 130.142014
+2025-09-12 13:57:59,886 - INFO - Epoch 9550, Loss: 117.433304
+2025-09-12 13:58:00,439 - INFO - Checkpoint saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/checkpoint_epoch_9550.pth
+2025-09-12 13:58:04,009 - INFO - Samples generated: ./experiments/sketch_32x32_2classes_20250912_131644/samples/samples_epoch_9550_classes_0-1.png
+2025-09-12 13:58:04,946 - INFO - Early stopping triggered! No improvement for 2500 epochs.
+2025-09-12 13:58:04,946 - INFO - Best loss achieved: 83.057266 at epoch 7057
+2025-09-12 13:58:05,493 - INFO - Training completed!
+2025-09-12 13:58:05,493 - INFO - Final loss: 110.850266
+2025-09-12 13:58:05,493 - INFO - Best loss: 83.057266
+2025-09-12 13:58:05,493 - INFO - Final model saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/final_model.pth
+2025-09-12 13:58:05,493 - INFO - Best model saved: ./experiments/sketch_32x32_2classes_20250912_131644/ckps/best_model.pth

@@ -1,0 +1,9 @@
+Sample grid layout (2x2):
+Row 1: Classes 0-1
+Row 2: Classes 0-1 (repeated)
+
+Detailed mapping:
+Position 0: Class 0 - airplane
+Position 1: Class 1 - alarm_clock
+Position 2: Class 0 - airplane
+Position 3: Class 1 - alarm_clock

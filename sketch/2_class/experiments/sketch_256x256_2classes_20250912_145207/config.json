@@ -1,0 +1,23 @@
+{
+  "experiment_name": "sketch_256x256_2classes",
+  "experiment_id": "sketch_256x256_2classes_20250912_145207",
+  "created_at": "2025-09-12T14:52:07.869643",
+  "base_dir": ".",
+  "description": "256x256 resolution, 2 classes, research-grade model (original dataset size)",
+  "image_size": 256,
+  "model_channels": [
+    128,
+    256,
+    512,
+    1024
+  ],
+  "num_residual_layers": 6,
+  "learning_rate": 5e-05,
+  "guidance_scale": 1.5,
+  "eta": 0.1,
+  "weight_multiplier": 1.0,
+  "batch_size": 8,
+  "num_epochs": 10000,
+  "checkpoint_interval": 0,
+  "sample_interval": 25
+}

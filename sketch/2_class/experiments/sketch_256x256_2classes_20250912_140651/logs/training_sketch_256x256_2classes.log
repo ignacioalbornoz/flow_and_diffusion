@@ -1,0 +1,41 @@
+2025-09-12 14:06:51,451 - INFO - Starting experiment: sketch_256x256_2classes
+2025-09-12 14:06:51,451 - INFO - Config: {'description': '256x256 resolution, 2 classes, research-grade model (original dataset size)', 'image_size': 256, 'model_channels': [128, 256, 512, 1024], 'num_residual_layers': 6, 'learning_rate': 5e-05, 'guidance_scale': 1.5, 'eta': 0.1, 'weight_multiplier': 1.0, 'batch_size': 8, 'num_epochs': 10000, 'checkpoint_interval': 100, 'sample_interval': 100}
+2025-09-12 14:06:51,452 - INFO - Using device: cuda:1
+2025-09-12 14:06:51,502 - INFO - GPU Memory: 25.2GB
+2025-09-12 14:06:51,502 - INFO - Free Memory: 0.0GB
+2025-09-12 14:06:51,502 - INFO - Initializing probability path...
+2025-09-12 14:06:52,178 - INFO - Probability path initialized successfully
+2025-09-12 14:06:52,178 - INFO - Initializing SketchUNet model...
+2025-09-12 14:06:53,780 - INFO - Model initialized successfully
+2025-09-12 14:06:53,783 - INFO - Total parameters: 201,580,462
+2025-09-12 14:06:53,783 - INFO - Trainable parameters: 201,580,462
+2025-09-12 14:06:53,783 - INFO - Initializing CFG trainer...
+2025-09-12 14:06:53,783 - INFO - Trainer initialized successfully
+2025-09-12 14:06:53,783 - INFO - Starting training:
+2025-09-12 14:06:53,783 - INFO -   - Total epochs: 10000
+2025-09-12 14:06:53,783 - INFO -   - Learning rate: 5e-05
+2025-09-12 14:06:53,783 - INFO -   - Batch size: 8
+2025-09-12 14:06:53,783 - INFO -   - Image size: 256x256
+2025-09-12 14:06:53,783 - INFO -   - Model channels: [128, 256, 512, 1024]
+2025-09-12 14:06:53,783 - INFO -   - Eta (null class probability): 0.1
+2025-09-12 14:06:53,783 - INFO -   - Loss: Standard MSE (no weighting)
+2025-09-12 14:06:53,783 - INFO -   - Checkpoint interval: 100
+2025-09-12 14:06:53,783 - INFO -   - Sample interval: 100
+2025-09-12 14:06:53,783 - INFO - Starting training...
+2025-09-12 14:06:54,499 - INFO - Epoch    0, Loss: 3382.219238
+2025-09-12 14:06:57,526 - INFO - New best model saved (loss: 3382.219238)
+2025-09-12 14:08:31,102 - INFO - Samples generated: ./experiments/sketch_256x256_2classes_20250912_140651/samples/samples_epoch_0000_classes_0-1.png
+2025-09-12 14:08:48,123 - INFO - New best model saved (loss: 2170.087646)
+2025-09-12 14:09:05,818 - INFO - New best model saved (loss: 2092.603027)
+2025-09-12 14:09:23,329 - INFO - New best model saved (loss: 1870.229126)
+2025-09-12 14:09:40,553 - INFO - New best model saved (loss: 1639.124756)
+2025-09-12 14:09:40,737 - INFO - Epoch   10, Loss: 2000.200439
+2025-09-12 14:09:58,270 - INFO - New best model saved (loss: 1418.417603)
+2025-09-12 14:10:15,939 - INFO - New best model saved (loss: 1297.101807)
+2025-09-12 14:10:33,431 - INFO - New best model saved (loss: 1286.177734)
+2025-09-12 14:10:33,622 - INFO - Epoch   20, Loss: 1432.043823
+2025-09-12 14:10:51,222 - INFO - New best model saved (loss: 1243.540894)
+2025-09-12 14:11:09,535 - INFO - New best model saved (loss: 1234.239136)
+2025-09-12 14:11:09,694 - INFO - Epoch   30, Loss: 1400.569580
+2025-09-12 14:11:27,450 - INFO - New best model saved (loss: 1190.997070)
+2025-09-12 14:11:44,366 - INFO - New best model saved (loss: 1147.477295)

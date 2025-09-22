@@ -1,0 +1,63 @@
+2025-09-12 14:50:02,698 - INFO - Starting experiment: sketch_256x256_2classes
+2025-09-12 14:50:02,699 - INFO - Config: {'description': '256x256 resolution, 2 classes, research-grade model (original dataset size)', 'image_size': 256, 'model_channels': [128, 256, 512, 1024], 'num_residual_layers': 6, 'learning_rate': 5e-05, 'guidance_scale': 1.5, 'eta': 0.1, 'weight_multiplier': 1.0, 'batch_size': 8, 'num_epochs': 10000, 'checkpoint_interval': 0, 'sample_interval': 25}
+2025-09-12 14:50:02,699 - INFO - Using device: cuda:1
+2025-09-12 14:50:02,731 - INFO - GPU Memory: 25.2GB
+2025-09-12 14:50:02,732 - INFO - Free Memory: 0.0GB
+2025-09-12 14:50:02,732 - INFO - Initializing probability path...
+2025-09-12 14:50:02,955 - INFO - Probability path initialized successfully
+2025-09-12 14:50:02,956 - INFO - Initializing SketchUNet model...
+2025-09-12 14:50:04,529 - INFO - Model initialized successfully
+2025-09-12 14:50:04,532 - INFO - Total parameters: 201,580,462
+2025-09-12 14:50:04,532 - INFO - Trainable parameters: 201,580,462
+2025-09-12 14:50:04,532 - INFO - Initializing CFG trainer...
+2025-09-12 14:50:04,533 - INFO - Trainer initialized successfully
+2025-09-12 14:50:04,533 - INFO - Starting training:
+2025-09-12 14:50:04,533 - INFO -   - Total epochs: 10000
+2025-09-12 14:50:04,533 - INFO -   - Learning rate: 5e-05
+2025-09-12 14:50:04,533 - INFO -   - Batch size: 8
+2025-09-12 14:50:04,533 - INFO -   - Image size: 256x256
+2025-09-12 14:50:04,533 - INFO -   - Model channels: [128, 256, 512, 1024]
+2025-09-12 14:50:04,533 - INFO -   - Eta (null class probability): 0.1
+2025-09-12 14:50:04,533 - INFO -   - Loss: Standard MSE (no weighting)
+2025-09-12 14:50:04,533 - INFO -   - Checkpoint interval: 0
+2025-09-12 14:50:04,533 - INFO -   - Sample interval: 25
+2025-09-12 14:50:04,533 - INFO - Starting training...
+2025-09-12 14:50:05,657 - ERROR - Error during training: CUDA out of memory. Tried to allocate 128.00 MiB. GPU 1 has a total capacity of 23.46 GiB of which 72.44 MiB is free. Including non-PyTorch memory, this process has 23.37 GiB memory in use. Of the allocated memory 22.95 GiB is allocated by PyTorch, and 226.37 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Traceback (most recent call last):
+  File "/home/ialbornoz/tesis/flow_and_diffusion/sketch/2_class/train_experiment.py", line 208, in main
+    loss = trainer.get_train_loss(batch_size=batch_size)
+  File "/home/ialbornoz/tesis/flow_and_diffusion/sketch/2_class/sketchutils.py", line 526, in get_train_loss
+    ut_theta = self.model(x,t,y) # (bs, 1, 32, 32)
+  File "/home/ialbornoz/miniconda3/envs/sketch_diffusion/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ialbornoz/miniconda3/envs/sketch_diffusion/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ialbornoz/tesis/flow_and_diffusion/sketch/2_class/sketch_unet.py", line 211, in forward
+    x = decoder(x, t_embed, y_embed) # (bs, c_i, h, w) -> (bs, c_{i-1}, 2 * h, 2 * w)
+  File "/home/ialbornoz/miniconda3/envs/sketch_diffusion/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ialbornoz/miniconda3/envs/sketch_diffusion/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ialbornoz/tesis/flow_and_diffusion/sketch/2_class/sketch_unet.py", line 148, in forward
+    x = block(x, t_embed, y_embed)
+  File "/home/ialbornoz/miniconda3/envs/sketch_diffusion/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ialbornoz/miniconda3/envs/sketch_diffusion/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ialbornoz/tesis/flow_and_diffusion/sketch/2_class/sketch_unet.py", line 77, in forward
+    x = self.block2(x) # (bs, c, h, w)
+  File "/home/ialbornoz/miniconda3/envs/sketch_diffusion/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ialbornoz/miniconda3/envs/sketch_diffusion/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ialbornoz/miniconda3/envs/sketch_diffusion/lib/python3.9/site-packages/torch/nn/modules/container.py", line 250, in forward
+    input = module(input)
+  File "/home/ialbornoz/miniconda3/envs/sketch_diffusion/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ialbornoz/miniconda3/envs/sketch_diffusion/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ialbornoz/miniconda3/envs/sketch_diffusion/lib/python3.9/site-packages/torch/nn/modules/batchnorm.py", line 193, in forward
+    return F.batch_norm(
+  File "/home/ialbornoz/miniconda3/envs/sketch_diffusion/lib/python3.9/site-packages/torch/nn/functional.py", line 2812, in batch_norm
+    return torch.batch_norm(
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 128.00 MiB. GPU 1 has a total capacity of 23.46 GiB of which 72.44 MiB is free. Including non-PyTorch memory, this process has 23.37 GiB memory in use. Of the allocated memory 22.95 GiB is allocated by PyTorch, and 226.37 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

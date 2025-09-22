@@ -1,0 +1,59 @@
+2025-09-12 13:11:28,749 - INFO - Starting experiment: sketch_32x32_2classes
+2025-09-12 13:11:28,749 - INFO - Config: {'description': '32x32 resolution, 2 classes, research-grade model', 'image_size': 32, 'model_channels': [64, 128, 256, 512], 'num_residual_layers': 4, 'learning_rate': 0.0001, 'guidance_scale': 1.5, 'eta': 0.1, 'weight_multiplier': 1.0, 'batch_size': 32, 'num_epochs': 10000, 'checkpoint_interval': 50, 'sample_interval': 50}
+2025-09-12 13:11:28,749 - INFO - Using device: cuda:1
+2025-09-12 13:11:28,779 - INFO - GPU Memory: 25.2GB
+2025-09-12 13:11:28,780 - INFO - Free Memory: 0.0GB
+2025-09-12 13:11:28,780 - INFO - Initializing probability path...
+2025-09-12 13:11:29,234 - INFO - Probability path initialized successfully
+2025-09-12 13:11:29,234 - INFO - Initializing SketchUNet model...
+2025-09-12 13:11:29,554 - INFO - Model initialized successfully
+2025-09-12 13:11:29,556 - INFO - Total parameters: 34,947,534
+2025-09-12 13:11:29,556 - INFO - Trainable parameters: 34,947,534
+2025-09-12 13:11:29,556 - INFO - Initializing CFG trainer...
+2025-09-12 13:11:29,556 - INFO - Trainer initialized successfully
+2025-09-12 13:11:29,556 - INFO - Starting training:
+2025-09-12 13:11:29,556 - INFO -   - Total epochs: 10000
+2025-09-12 13:11:29,556 - INFO -   - Learning rate: 0.0001
+2025-09-12 13:11:29,556 - INFO -   - Batch size: 32
+2025-09-12 13:11:29,556 - INFO -   - Image size: 32x32
+2025-09-12 13:11:29,556 - INFO -   - Model channels: [64, 128, 256, 512]
+2025-09-12 13:11:29,556 - INFO -   - Eta (null class probability): 0.1
+2025-09-12 13:11:29,556 - INFO -   - Loss: Standard MSE (no weighting)
+2025-09-12 13:11:29,556 - INFO -   - Checkpoint interval: 50
+2025-09-12 13:11:29,557 - INFO -   - Sample interval: 50
+2025-09-12 13:11:29,557 - INFO - Starting training...
+2025-09-12 13:11:30,140 - INFO - Epoch    0, Loss: 2331.198975
+2025-09-12 13:11:30,682 - INFO - New best model saved (loss: 2331.198975)
+2025-09-12 13:11:30,692 - ERROR - Error during training: The size of tensor a (4) must match the size of tensor b (2) at non-singleton dimension 0
+Traceback (most recent call last):
+  File "/home/ialbornoz/tesis/flow_and_diffusion/sketch/2_class/train_experiment.py", line 258, in main
+    sample_file = generate_samples(model, path, device, epoch, paths["samples_dir"], config)
+  File "/home/ialbornoz/tesis/flow_and_diffusion/sketch/2_class/train_experiment.py", line 86, in generate_samples
+    x1 = simulator.simulate(x0, ts, y=classes)
+  File "/home/ialbornoz/miniconda3/envs/sketch_diffusion/lib/python3.9/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/ialbornoz/tesis/flow_and_diffusion/sketch/2_class/sketchutils.py", line 365, in simulate
+    x = self.step(x, t, h, **kwargs)
+  File "/home/ialbornoz/tesis/flow_and_diffusion/sketch/2_class/sketchutils.py", line 392, in step
+    return xt + self.ode.drift_coefficient(xt,t, **kwargs) * h
+  File "/home/ialbornoz/tesis/flow_and_diffusion/sketch/2_class/sketchutils.py", line 493, in drift_coefficient
+    guided_vector_field = self.net(x, t, y)
+  File "/home/ialbornoz/miniconda3/envs/sketch_diffusion/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ialbornoz/miniconda3/envs/sketch_diffusion/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ialbornoz/tesis/flow_and_diffusion/sketch/2_class/sketch_unet.py", line 201, in forward
+    x = encoder(x, t_embed, y_embed) # (bs, c_i, h, w) -> (bs, c_{i+1}, h // 2, w //2)
+  File "/home/ialbornoz/miniconda3/envs/sketch_diffusion/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ialbornoz/miniconda3/envs/sketch_diffusion/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ialbornoz/tesis/flow_and_diffusion/sketch/2_class/sketch_unet.py", line 101, in forward
+    x = block(x, t_embed, y_embed)
+  File "/home/ialbornoz/miniconda3/envs/sketch_diffusion/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ialbornoz/miniconda3/envs/sketch_diffusion/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ialbornoz/tesis/flow_and_diffusion/sketch/2_class/sketch_unet.py", line 74, in forward
+    x = x + y_embed
+RuntimeError: The size of tensor a (4) must match the size of tensor b (2) at non-singleton dimension 0
