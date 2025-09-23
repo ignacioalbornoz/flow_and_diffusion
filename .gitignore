@@ -1,1 +1,47 @@
 sketch/data
+
+# Model checkpoints and large files
+*.pth
+*.pt
+*.pkl
+*.h5
+*.hdf5
+*.npz
+*.npy
+
+# Experiment directories with checkpoints
+sketch/experiments/
+sketch/2_class/experiments/
+
+# Large data files
+*.zip
+*.tar.gz
+*.tar
+*.rar
+*.7z
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
