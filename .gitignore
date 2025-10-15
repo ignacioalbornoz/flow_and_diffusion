@@ -45,3 +45,5 @@ ENV/
 # OS files
 .DS_Store
 Thumbs.db
+
+sketch/2_class/conditioning_image

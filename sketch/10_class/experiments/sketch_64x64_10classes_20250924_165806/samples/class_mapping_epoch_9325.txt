@@ -1,0 +1,18 @@
+Sample grid layout (5x2):
+Row 1: Classes 0-1
+Row 2: Classes 2-3
+Row 3: Classes 4-5
+Row 4: Classes 6-7
+Row 5: Classes 8-9
+
+Detailed mapping:
+Position 0: Class 0 - airplane
+Position 1: Class 1 - alarm_clock
+Position 2: Class 0 - airplane
+Position 3: Class 1 - alarm_clock
+Position 4: Class 0 - airplane
+Position 5: Class 1 - alarm_clock
+Position 6: Class 0 - airplane
+Position 7: Class 1 - alarm_clock
+Position 8: Class 0 - airplane
+Position 9: Class 1 - alarm_clock
